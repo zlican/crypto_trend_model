@@ -22,8 +22,8 @@ type TrendResult struct {
 	Status       TrendStatus
 	CurrentPrice float64
 	EMA25        float64
-	EMA144       float64
-	EMA169       float64
+	EMA60        float64
+	EMA120       float64
 	Time         time.Time
 }
 
@@ -63,14 +63,17 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	// 计算指标
 	currentPrice := closePrices[len(closePrices)-1]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
-	ema144 := a.indicators["EMA144"].Calculate(closePrices)
-	ema169 := a.indicators["EMA169"].Calculate(closePrices)
+	ema60 := a.indicators["EMA60"].Calculate(closePrices)
+	ema120 := a.indicators["EMA120"].Calculate(closePrices)
+
+	isUpTrend := ema25 > ema120
+	isDownTrend := ema25 < ema120
 
 	// 判断趋势
 	var status TrendStatus
-	if currentPrice > ema25 && currentPrice > ema144 {
+	if currentPrice > ema25 && isUpTrend {
 		status = UpTrend
-	} else if currentPrice < ema25 && currentPrice < ema169 {
+	} else if currentPrice < ema25 && isDownTrend {
 		status = DownTrend
 	} else {
 		status = RangeBound
@@ -82,8 +85,8 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 		Status:       status,
 		CurrentPrice: currentPrice,
 		EMA25:        ema25,
-		EMA144:       ema144,
-		EMA169:       ema169,
+		EMA60:        ema60,
+		EMA120:       ema120,
 		Time:         time.Now(),
 	}, nil
 }
@@ -109,14 +112,14 @@ func (a *TrendAnalyzer) AnalyzeAllTrends() []*TrendResult {
 // FormatTrendResult 格式化趋势结果为字符串
 func FormatTrendResult(result *TrendResult) string {
 	return fmt.Sprintf(
-		"[%s] %s %s: 当前价格=%.2f, EMA25=%.2f, EMA144=%.2f, EMA169=%.2f, 趋势=%s",
+		"[%s] %s %s: 当前价格=%.2f, EMA25=%.2f, EMA60=%.2f, EMA120=%.2f, 趋势=%s",
 		result.Time.Format("2006-01-02 15:04:05"),
 		result.Symbol,
 		result.Interval,
 		result.CurrentPrice,
 		result.EMA25,
-		result.EMA144,
-		result.EMA169,
+		result.EMA60,
+		result.EMA120,
 		result.Status,
 	)
 }

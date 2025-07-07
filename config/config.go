@@ -17,11 +17,15 @@ type Config struct {
 
 	// 技术指标参数
 	EMA25Period  int
-	EMA144Period int
-	EMA169Period int
+	EMA60Period  int
+	EMA120Period int
 
-	// 监控频率（小时）
+	// 监控频率（分钟）
 	MonitorInterval int
+
+	// API服务器配置
+	EnableAPIServer bool
+	APIServerPort   int
 }
 
 // DefaultConfig 返回默认配置
@@ -30,12 +34,14 @@ func DefaultConfig() *Config {
 		APIBaseURL:      "https://fapi.binance.com",
 		KlineEndpoint:   "/fapi/v1/klines",
 		Symbols:         []string{"BTCUSDT", "ETHUSDT"},
-		Intervals:       []string{"1h", "4h", "1d"},
+		Intervals:       []string{"15m", "1h", "4h", "1d"},
 		ProxyURL:        "http://127.0.0.1:10809",
 		EMA25Period:     25,
-		EMA144Period:    144,
-		EMA169Period:    169,
-		MonitorInterval: 1, // 每小时
+		EMA60Period:     60,
+		EMA120Period:    120,
+		MonitorInterval: 15, // 每15分钟
+		EnableAPIServer: true,
+		APIServerPort:   8080,
 	}
 }
 

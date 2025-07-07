@@ -58,15 +58,34 @@ func (c *BinanceClient) GetKlines(symbol, interval string, limit int) ([]KlineDa
 		Timeout:   c.HTTPClient.Timeout,
 	}
 
-	resp, err := client.Get(urls)
-	if err != nil {
-		return nil, fmt.Errorf("请求K线数据失败: %v", err)
+	var resp *http.Response
+	var err error
+	maxRetries := 3
+	retryCount := 0
+	retryDelay := 2 * time.Second
+
+	for retryCount < maxRetries {
+		resp, err = client.Get(urls)
+		if err == nil && resp.StatusCode == http.StatusOK {
+			break
+		}
+
+		if resp != nil {
+			resp.Body.Close()
+		}
+
+		retryCount++
+		if retryCount >= maxRetries {
+			if err != nil {
+				return nil, fmt.Errorf("请求K线数据失败(已重试%d次): %v", maxRetries, err)
+			}
+			return nil, fmt.Errorf("API返回错误状态码(已重试%d次): %d", maxRetries, resp.StatusCode)
+		}
+
+		fmt.Printf("请求失败，%d秒后进行第%d次重试...\n", retryDelay/time.Second, retryCount+1)
+		time.Sleep(retryDelay)
 	}
 	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("API返回错误状态码: %d", resp.StatusCode)
-	}
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {

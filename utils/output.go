@@ -47,8 +47,8 @@ func (o *OutputManager) LogTrendResults(results []*TrendResult) error {
 			fmt.Printf("%s %s: %s\n", result.Symbol, result.Interval, result.Status)
 			fmt.Printf("  当前价格: %.2f\n", result.CurrentPrice)
 			fmt.Printf("  EMA25: %.2f\n", result.EMA25)
-			fmt.Printf("  EMA144: %.2f\n", result.EMA144)
-			fmt.Printf("  EMA169: %.2f\n", result.EMA169)
+			fmt.Printf("  EMA60: %.2f\n", result.EMA60)
+			fmt.Printf("  EMA120: %.2f\n", result.EMA120)
 			fmt.Println("------------------------")
 		}
 	}

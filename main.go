@@ -28,11 +28,29 @@ func main() {
 	// 创建趋势分析器
 	analyzer := utils.NewTrendAnalyzer()
 
+	// 创建API服务器
+	var apiServer *utils.TrendAPI
+	if config.GlobalConfig.EnableAPIServer {
+		apiServer = utils.NewTrendAPI(config.GlobalConfig.APIServerPort, analyzer)
+
+		// 在goroutine中启动API服务器
+		go func() {
+			if err := apiServer.Start(); err != nil {
+				log.Printf("API服务器启动失败: %v", err)
+			}
+		}()
+	}
+
 	// 首次运行
-	runAnalysis(analyzer, output)
+	results := runAnalysis(analyzer, output)
+
+	// 如果启用了API服务器，更新结果
+	if apiServer != nil && len(results) > 0 {
+		apiServer.UpdateResults(results)
+	}
 
 	// 设置定时器，每小时执行一次
-	ticker := time.NewTicker(time.Duration(config.GlobalConfig.MonitorInterval) * time.Hour)
+	ticker := time.NewTicker(time.Duration(config.GlobalConfig.MonitorInterval) * time.Minute)
 	defer ticker.Stop()
 
 	// 设置信号处理，以便优雅地退出
@@ -45,7 +63,12 @@ func main() {
 	for {
 		select {
 		case <-ticker.C:
-			runAnalysis(analyzer, output)
+			results := runAnalysis(analyzer, output)
+
+			// 如果启用了API服务器，更新结果
+			if apiServer != nil && len(results) > 0 {
+				apiServer.UpdateResults(results)
+			}
 		case <-sigChan:
 			log.Println("接收到退出信号，程序正在退出...")
 			return
@@ -54,7 +77,7 @@ func main() {
 }
 
 // runAnalysis 运行一次趋势分析
-func runAnalysis(analyzer *utils.TrendAnalyzer, output *utils.OutputManager) {
+func runAnalysis(analyzer *utils.TrendAnalyzer, output *utils.OutputManager) []*utils.TrendResult {
 	log.Println("开始执行趋势分析...")
 
 	// 分析所有趋势
@@ -66,4 +89,6 @@ func runAnalysis(analyzer *utils.TrendAnalyzer, output *utils.OutputManager) {
 	}
 
 	log.Println("趋势分析完成")
+
+	return results
 }

@@ -72,8 +72,8 @@ func (ema *EMA) GetPeriod() int {
 func NewIndicators() map[string]Indicator {
 	return map[string]Indicator{
 		"EMA25":  &EMA{Period: config.GlobalConfig.EMA25Period},
-		"EMA144": &EMA{Period: config.GlobalConfig.EMA144Period},
-		"EMA169": &EMA{Period: config.GlobalConfig.EMA169Period},
+		"EMA60":  &EMA{Period: config.GlobalConfig.EMA60Period},
+		"EMA120": &EMA{Period: config.GlobalConfig.EMA120Period},
 	}
 }
 

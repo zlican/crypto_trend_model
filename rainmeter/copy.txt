@@ -1,0 +1,223 @@
+[Rainmeter]
+Update=1000
+AccurateText=1
+DynamicWindowSize=1
+BackgroundMode=2
+SolidColor=0,0,0,1
+
+[Metadata]
+Name=Crypto Trend Monitor
+Author=zlican
+Information=展示 BTC 多周期趋势（柔和科技风格）
+Version=3.1
+
+[Variables]
+APIHost=localhost
+APIPort=8080
+
+; 字体设置 - 使用本地楷体
+FontName=华文楷体
+FontNameTitle=华文楷体
+FontSize=14
+FontSizeTitle=15
+FontGlowSize=3
+FontGlowColor=255,255,255,25
+
+; 字体颜色优化
+FontMainColor=240,240,240,255  ; 更白的主文字
+FontSecondaryColor=170,180,200,220  ; 微调次要文字
+FontTitleColor=220,230,255,255  ; 带淡蓝的标题
+UpTrendColor=124,252,0
+DownTrendColor=255,69,0
+RangeColor=0,191,255
+
+; 布局设置
+PaddingX=24
+PaddingY=22
+LineHeight=34
+BoxWidth=450
+BoxHeight=128
+CornerRadius=20
+BackgroundAlpha=180
+
+; 优化后的颜色方案 - 更协调的柔和科技风格
+GlassEffect=25,30,45,#BackgroundAlpha#  ; 更深的科技蓝背景
+GlassGradient=40,45,70,#BackgroundAlpha#  ; 更平滑的渐变
+BorderColor=90,110,200,80  ; 更明显的边框
+GlowColor=70,90,220,60  ; 增强光晕效果
+AccentColor=100,180,255,255  ; 更亮的强调色
+
+; 图标设置
+IconSize=16
+
+; ======= 背景和边框效果 =======
+[ShapeBackground]
+Meter=Shape
+X=0
+Y=0
+Shape=Rectangle 0,0,#BoxWidth#,#BoxHeight#,#CornerRadius# | Fill LinearGradient MyGradient | StrokeWidth 1 | Stroke Color #BorderColor#
+MyGradient=90 | #GlassEffect# ; 0.0 | #GlassGradient# ; 1.0
+; 添加内部光晕
+Shape2=Rectangle 2,2,(#BoxWidth#-4),(#BoxHeight#-4),#CornerRadius# | StrokeWidth 4 | Stroke Color #GlowColor# | Fill Color 0,0,0,0
+; 添加顶部高光
+Shape3=Rectangle 8,8,(#BoxWidth#-16),2,2 | Fill Color 255,255,255,30 | StrokeWidth 0
+DynamicVariables=1
+
+; ======= 顶部标题栏 =======
+[MeterTitle]
+Meter=String
+FontFace=#FontNameTitle#
+FontSize=#FontSizeTitle#
+FontColor=#FontTitleColor#
+StringStyle=Bold
+X=#PaddingX#
+Y=14
+AntiAlias=1
+Text=Crypto-Trend
+EffectColor=#AccentColor#,150  ; 使用强调色作为光晕
+Effect=Glow
+
+; ======= 更新时间 =======
+[MeasureTime]
+Measure=Time
+Format=%H:%M:%S
+UpdateDivider=1
+
+[MeterUpdateTime]
+Meter=String
+MeasureName=MeasureTime
+FontFace=#FontName#
+FontSize=11
+FontColor=#FontSecondaryColor#
+X=(#BoxWidth#-#PaddingX#)
+Y=17
+StringAlign=Right
+AntiAlias=1
+Text=Update: %1
+DynamicVariables=1
+
+; ======= 分隔线 =======
+[MeterDivider]
+Meter=Shape
+X=14
+Y=42
+Shape=Line 0,0,(#BoxWidth#-28),0 | StrokeWidth 1 | Stroke LinearGradient Divider
+Divider=0 | 100,120,220,40 ; 0.0 | 150,180,255,120 ; 0.5 | 100,120,220,40 ; 1.0
+
+; ========= 数据源：BTC =========
+[MeasureBTC1D]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/btc?interval=1d&format=text&ts=[&MeasureTime]
+RegExp="BTC Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+[MeasureBTC4H]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/btc?interval=4h&format=text&ts=[&MeasureTime]
+RegExp="BTC Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+[MeasureBTC1H]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/btc?interval=1h&format=text&ts=[&MeasureTime]
+RegExp="BTC Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+[MeasureBTC15M]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/btc?interval=15m&format=text&ts=[&MeasureTime]
+RegExp="BTC Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+; ========= 数据源：ETH =========
+[MeasureETH1D]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/eth?interval=1d&format=text&ts=[&MeasureTime]
+RegExp="ETH Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+[MeasureETH4H]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/eth?interval=4h&format=text&ts=[&MeasureTime]
+RegExp="ETH Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+[MeasureETH1H]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/eth?interval=1h&format=text&ts=[&MeasureTime]
+RegExp="ETH Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+[MeasureETH15M]
+Measure=WebParser
+URL=http://#APIHost#:#APIPort#/api/trend/eth?interval=15m&format=text&ts=[&MeasureTime]
+RegExp="ETH Trend:\s*(.*)"
+StringIndex=1
+Substitute="up":"上涨","down":"下跌","range":"混沌","unknown":"未知"
+UpdateDivider=5
+DynamicVariables=1
+
+; ========== BTC 显示 ==========
+[MeterBTC]
+Meter=String
+FontFace=#FontName#
+FontSize=#FontSize#
+FontColor=#FontColor#
+X=#PaddingX#
+Y=60
+AntiAlias=1
+Text=BTC:	15M(%4)  1H(%3)  4H(%2) 1D(%1)
+MeasureName=MeasureBTC1D
+MeasureName2=MeasureBTC4H
+MeasureName3=MeasureBTC1H
+MeasureName4=MeasureBTC15M
+DynamicVariables=1
+InlinePattern=上涨
+InlinePattern2=下跌
+InlinePattern3=混沌
+InlineSetting=Color | #UpTrendColor#
+InlineSetting2=Color | #DownTrendColor#
+InlineSetting3=Color | #RangeColor#
+
+; ========== ETH 显示 ==========
+[MeterETH]
+Meter=String
+FontFace=#FontName#
+FontSize=#FontSize#
+FontColor=#FontColor#
+X=#PaddingX#
+Y=88
+AntiAlias=1
+Text=ETH:	15M(%4)  1H(%3)  4H(%2) 1D(%1)
+MeasureName=MeasureETH1D
+MeasureName2=MeasureETH4H
+MeasureName3=MeasureETH1H
+MeasureName4=MeasureETH15M
+DynamicVariables=1
+InlinePattern=上涨
+InlinePattern2=下跌
+InlinePattern3=混沌
+InlineSetting=Color | #UpTrendColor#
+InlineSetting2=Color | #DownTrendColor#
+InlineSetting3=Color | #RangeColor#
