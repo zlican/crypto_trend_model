@@ -17,7 +17,7 @@ type Config struct {
 
 	// 技术指标参数
 	EMA25Period  int
-	EMA60Period  int
+	EMA50Period  int
 	EMA120Period int
 
 	// 监控频率（分钟）
@@ -33,12 +33,11 @@ func DefaultConfig() *Config {
 	return &Config{
 		APIBaseURL:      "https://fapi.binance.com",
 		KlineEndpoint:   "/fapi/v1/klines",
-		Symbols:         []string{"BTCUSDT", "ETHUSDT"},
-		Intervals:       []string{"15m", "1h", "4h", "1d"},
+		Symbols:         []string{"BTCUSDT"},
+		Intervals:       []string{"15m", "1h"},
 		ProxyURL:        "http://127.0.0.1:10809",
 		EMA25Period:     25,
-		EMA60Period:     60,
-		EMA120Period:    120,
+		EMA50Period:     50,
 		MonitorInterval: 15, // 每15分钟
 		EnableAPIServer: true,
 		APIServerPort:   8080,

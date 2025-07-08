@@ -71,9 +71,8 @@ func (ema *EMA) GetPeriod() int {
 // NewIndicators 创建所有需要的技术指标
 func NewIndicators() map[string]Indicator {
 	return map[string]Indicator{
-		"EMA25":  &EMA{Period: config.GlobalConfig.EMA25Period},
-		"EMA60":  &EMA{Period: config.GlobalConfig.EMA60Period},
-		"EMA120": &EMA{Period: config.GlobalConfig.EMA120Period},
+		"EMA25": &EMA{Period: config.GlobalConfig.EMA25Period},
+		"EMA50": &EMA{Period: config.GlobalConfig.EMA50Period},
 	}
 }
 

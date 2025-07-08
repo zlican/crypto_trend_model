@@ -10,9 +10,9 @@ import (
 type TrendStatus string
 
 const (
-	UpTrend    TrendStatus = "上涨趋势"
-	DownTrend  TrendStatus = "下跌趋势"
-	RangeBound TrendStatus = "震荡行情"
+	BanLong    TrendStatus = "禁多"
+	BanShort   TrendStatus = "禁空"
+	RangeBound TrendStatus = "混沌"
 )
 
 // TrendResult 趋势分析结果
@@ -22,8 +22,7 @@ type TrendResult struct {
 	Status       TrendStatus
 	CurrentPrice float64
 	EMA25        float64
-	EMA60        float64
-	EMA120       float64
+	EMA50        float64
 	Time         time.Time
 }
 
@@ -63,20 +62,30 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	// 计算指标
 	currentPrice := closePrices[len(closePrices)-1]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
-	ema60 := a.indicators["EMA60"].Calculate(closePrices)
-	ema120 := a.indicators["EMA120"].Calculate(closePrices)
+	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 
-	isUpTrend := ema25 > ema120
-	isDownTrend := ema25 < ema120
+	isUpTrend := ema25 > ema50
+	isDownTrend := ema25 < ema50
 
 	// 判断趋势
 	var status TrendStatus
-	if currentPrice > ema25 && isUpTrend {
-		status = UpTrend
-	} else if currentPrice < ema25 && isDownTrend {
-		status = DownTrend
-	} else {
-		status = RangeBound
+
+	if interval == "15m" {
+		if currentPrice > ema25 && isUpTrend {
+			status = BanShort
+		} else if currentPrice < ema25 && isDownTrend {
+			status = BanLong
+		} else {
+			status = RangeBound
+		}
+	} else if interval == "1h" {
+		if currentPrice > ema25 {
+			status = BanShort
+		} else if currentPrice < ema25 {
+			status = BanLong
+		} else {
+			status = RangeBound
+		}
 	}
 
 	return &TrendResult{
@@ -85,8 +94,7 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 		Status:       status,
 		CurrentPrice: currentPrice,
 		EMA25:        ema25,
-		EMA60:        ema60,
-		EMA120:       ema120,
+		EMA50:        ema50,
 		Time:         time.Now(),
 	}, nil
 }
@@ -112,14 +120,13 @@ func (a *TrendAnalyzer) AnalyzeAllTrends() []*TrendResult {
 // FormatTrendResult 格式化趋势结果为字符串
 func FormatTrendResult(result *TrendResult) string {
 	return fmt.Sprintf(
-		"[%s] %s %s: 当前价格=%.2f, EMA25=%.2f, EMA60=%.2f, EMA120=%.2f, 趋势=%s",
+		"[%s] %s %s: 当前价格=%.2f, EMA25=%.2f, EMA50=%.2f, 趋势=%s",
 		result.Time.Format("2006-01-02 15:04:05"),
 		result.Symbol,
 		result.Interval,
 		result.CurrentPrice,
 		result.EMA25,
-		result.EMA60,
-		result.EMA120,
+		result.EMA50,
 		result.Status,
 	)
 }
