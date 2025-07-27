@@ -45,7 +45,6 @@ func (o *OutputManager) LogTrendResults(results []*TrendResult) error {
 
 		for _, result := range results {
 			fmt.Printf("%s %s: %s\n", result.Symbol, result.Interval, result.Status)
-			fmt.Printf("  当前价格: %.2f\n", result.CurrentPrice)
 			fmt.Printf("  EMA25: %.2f\n", result.EMA25)
 			fmt.Printf("  EMA50: %.2f\n", result.EMA50)
 			fmt.Println("------------------------")

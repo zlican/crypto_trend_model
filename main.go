@@ -49,7 +49,7 @@ func main() {
 		apiServer.UpdateResults(results)
 	}
 
-	// 设置定时器，每小时执行一次
+	// 设置定时器，每15分钟执行一次
 	ticker := time.NewTicker(time.Duration(config.GlobalConfig.MonitorInterval) * time.Minute)
 	defer ticker.Stop()
 

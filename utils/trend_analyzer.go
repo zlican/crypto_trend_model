@@ -10,20 +10,18 @@ import (
 type TrendStatus string
 
 const (
-	BanLong    TrendStatus = "禁多"
-	BanShort   TrendStatus = "禁空"
-	RangeBound TrendStatus = "混沌"
+	UPEMA   TrendStatus = "金叉"
+	DOWNEMA TrendStatus = "死叉"
 )
 
 // TrendResult 趋势分析结果
 type TrendResult struct {
-	Symbol       string
-	Interval     string
-	Status       TrendStatus
-	CurrentPrice float64
-	EMA25        float64
-	EMA50        float64
-	Time         time.Time
+	Symbol   string
+	Interval string
+	Status   TrendStatus
+	EMA25    float64
+	EMA50    float64
+	Time     time.Time
 }
 
 // TrendAnalyzer 趋势分析器
@@ -60,42 +58,27 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	closePrices := ExtractClosePrices(klines)
 
 	// 计算指标
-	currentPrice := closePrices[len(closePrices)-1]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 
 	isUpTrend := ema25 > ema50
-	isDownTrend := ema25 < ema50
 
 	// 判断趋势
 	var status TrendStatus
 
-	if interval == "15m" {
-		if currentPrice > ema25 && isUpTrend {
-			status = BanShort
-		} else if currentPrice < ema25 && isDownTrend {
-			status = BanLong
-		} else {
-			status = RangeBound
-		}
-	} else if interval == "1h" {
-		if currentPrice > ema25 {
-			status = BanShort
-		} else if currentPrice < ema25 {
-			status = BanLong
-		} else {
-			status = RangeBound
-		}
+	if isUpTrend {
+		status = UPEMA
+	} else {
+		status = DOWNEMA
 	}
 
 	return &TrendResult{
-		Symbol:       symbol,
-		Interval:     interval,
-		Status:       status,
-		CurrentPrice: currentPrice,
-		EMA25:        ema25,
-		EMA50:        ema50,
-		Time:         time.Now(),
+		Symbol:   symbol,
+		Interval: interval,
+		Status:   status,
+		EMA25:    ema25,
+		EMA50:    ema50,
+		Time:     time.Now(),
 	}, nil
 }
 
@@ -124,7 +107,6 @@ func FormatTrendResult(result *TrendResult) string {
 		result.Time.Format("2006-01-02 15:04:05"),
 		result.Symbol,
 		result.Interval,
-		result.CurrentPrice,
 		result.EMA25,
 		result.EMA50,
 		result.Status,

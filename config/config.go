@@ -33,8 +33,8 @@ func DefaultConfig() *Config {
 	return &Config{
 		APIBaseURL:      "https://fapi.binance.com",
 		KlineEndpoint:   "/fapi/v1/klines",
-		Symbols:         []string{"BTCUSDT"},
-		Intervals:       []string{"15m", "1h"},
+		Symbols:         []string{"BTCUSDT", "ETHUSDT"},
+		Intervals:       []string{"5m", "15m", "1h"},
 		ProxyURL:        "http://127.0.0.1:10809",
 		EMA25Period:     25,
 		EMA50Period:     50,
