@@ -33,7 +33,6 @@ func main() {
 	if config.GlobalConfig.EnableAPIServer {
 		apiServer = utils.NewTrendAPI(config.GlobalConfig.APIServerPort, analyzer)
 
-		// 在goroutine中启动API服务器
 		go func() {
 			if err := apiServer.Start(); err != nil {
 				log.Printf("API服务器启动失败: %v", err)
@@ -41,39 +40,59 @@ func main() {
 		}()
 	}
 
-	// 首次运行
+	// ✅ 首次立即执行
+	log.Printf("[TrendMonitor] 首次立即执行: %s", time.Now().Format("15:04:05"))
 	results := runAnalysis(analyzer, output)
-
-	// 如果启用了API服务器，更新结果
 	if apiServer != nil && len(results) > 0 {
 		apiServer.UpdateResults(results)
 	}
 
-	// 设置定时器，每15分钟执行一次
-	ticker := time.NewTicker(time.Duration(config.GlobalConfig.MonitorInterval) * time.Minute)
-	defer ticker.Stop()
+	// ✅ 计算下一次 minute % 15 == 0 的时间
+	now := time.Now()
+	minutesToNext := 15 - (now.Minute() % 15)
+	if minutesToNext == 0 {
+		minutesToNext = 15
+	}
+	nextAligned := now.Truncate(time.Minute).Add(time.Duration(minutesToNext) * time.Minute)
+	delay := time.Until(nextAligned)
 
-	// 设置信号处理，以便优雅地退出
+	log.Printf("[TrendMonitor] 下一次对齐执行时间: %s（等待 %v）", nextAligned.Format("15:04:05"), delay)
+
+	// ✅ 通道控制优雅退出
 	sigChan := make(chan os.Signal, 1)
 	signal.Notify(sigChan, syscall.SIGINT, syscall.SIGTERM)
 
-	log.Println("程序已启动，按 Ctrl+C 退出...")
+	// ✅ 启动延迟后执行一次 + 开始固定周期执行
+	go func() {
+		time.Sleep(delay)
 
-	// 主循环
-	for {
-		select {
-		case <-ticker.C:
-			results := runAnalysis(analyzer, output)
-
-			// 如果启用了API服务器，更新结果
-			if apiServer != nil && len(results) > 0 {
-				apiServer.UpdateResults(results)
-			}
-		case <-sigChan:
-			log.Println("接收到退出信号，程序正在退出...")
-			return
+		log.Printf("[TrendMonitor] 对齐执行: %s", time.Now().Format("15:04:05"))
+		results := runAnalysis(analyzer, output)
+		if apiServer != nil && len(results) > 0 {
+			apiServer.UpdateResults(results)
 		}
-	}
+
+		ticker := time.NewTicker(15 * time.Minute)
+		defer ticker.Stop()
+
+		for {
+			select {
+			case <-ticker.C:
+				log.Printf("[TrendMonitor] 周期触发: %s", time.Now().Format("15:04:05"))
+				results := runAnalysis(analyzer, output)
+				if apiServer != nil && len(results) > 0 {
+					apiServer.UpdateResults(results)
+				}
+			case <-sigChan:
+				log.Println("接收到退出信号，程序正在退出...")
+				return
+			}
+		}
+	}()
+
+	// 阻塞主协程，直到收到退出信号
+	<-sigChan
+	log.Println("程序已退出。")
 }
 
 // runAnalysis 运行一次趋势分析
