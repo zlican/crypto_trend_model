@@ -66,7 +66,11 @@ func (api *TrendAPI) handleTrendBTC(w http.ResponseWriter, r *http.Request) {
 	if btcResult, ok := api.latestResults[btcKey]; ok {
 		// 根据请求格式返回不同的响应
 		apiStatus := "unknown"
-		if btcResult.Status == UPEMA {
+		if btcResult.Status == UP {
+			apiStatus = "UP"
+		} else if btcResult.Status == DOWN {
+			apiStatus = "DOWN"
+		} else if btcResult.Status == UPEMA {
 			apiStatus = "UPEMA"
 		} else {
 			apiStatus = "DOWNEMA"
@@ -119,10 +123,15 @@ func (api *TrendAPI) handleTrendETH(w http.ResponseWriter, r *http.Request) {
 	if ethResult, ok := api.latestResults[ethKey]; ok {
 		// 根据请求格式返回不同的响应
 		apiStatus := "unknown"
-		if ethResult.Status == UPEMA {
+		if ethResult.Status == UP {
+			apiStatus = "UP"
+		} else if ethResult.Status == DOWN {
+			apiStatus = "DOWN"
+		} else if ethResult.Status == UPEMA {
 			apiStatus = "UPEMA"
 		} else {
 			apiStatus = "DOWNEMA"
+
 		}
 
 		if r.URL.Query().Get("format") == "text" {

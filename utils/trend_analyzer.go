@@ -10,6 +10,8 @@ import (
 type TrendStatus string
 
 const (
+	UP      TrendStatus = "开多"
+	DOWN    TrendStatus = "开空"
 	UPEMA   TrendStatus = "金叉"
 	DOWNEMA TrendStatus = "死叉"
 )
@@ -58,18 +60,24 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	closePrices := ExtractClosePrices(klines)
 
 	// 计算指标
+	price := closePrices[len(closePrices)-1]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 
-	isUpTrend := ema25 > ema50
-
 	// 判断趋势
 	var status TrendStatus
-
-	if isUpTrend {
-		status = UPEMA
+	if interval == "1h" {
+		if price > ema25 {
+			status = UP
+		} else {
+			status = DOWN
+		}
 	} else {
-		status = DOWNEMA
+		if ema25 > ema50 {
+			status = UPEMA
+		} else {
+			status = DOWNEMA
+		}
 	}
 
 	return &TrendResult{
