@@ -10,8 +10,9 @@ import (
 type TrendStatus string
 
 const (
-	UP      TrendStatus = "开多"
-	DOWN    TrendStatus = "开空"
+	UP      TrendStatus = "多"
+	DOWN    TrendStatus = "空"
+	RANGE   TrendStatus = "乱"
 	UPEMA   TrendStatus = "金叉"
 	DOWNEMA TrendStatus = "死叉"
 )
@@ -67,10 +68,12 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	// 判断趋势
 	var status TrendStatus
 	if interval == "1h" {
-		if price > ema25 {
+		if price > ema25 && ema25 > ema50 {
 			status = UP
-		} else {
+		} else if price < ema25 && ema25 < ema50 {
 			status = DOWN
+		} else {
+			status = RANGE
 		}
 	} else {
 		if ema25 > ema50 {

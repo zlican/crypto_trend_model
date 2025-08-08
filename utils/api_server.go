@@ -70,6 +70,8 @@ func (api *TrendAPI) handleTrendBTC(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "UP"
 		} else if btcResult.Status == DOWN {
 			apiStatus = "DOWN"
+		} else if btcResult.Status == RANGE {
+			apiStatus = "RANGE"
 		} else if btcResult.Status == UPEMA {
 			apiStatus = "UPEMA"
 		} else {
@@ -127,6 +129,8 @@ func (api *TrendAPI) handleTrendETH(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "UP"
 		} else if ethResult.Status == DOWN {
 			apiStatus = "DOWN"
+		} else if ethResult.Status == RANGE {
+			apiStatus = "RANGE"
 		} else if ethResult.Status == UPEMA {
 			apiStatus = "UPEMA"
 		} else {
