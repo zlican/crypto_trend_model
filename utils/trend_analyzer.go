@@ -67,7 +67,7 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 
 	// 判断趋势
 	var status TrendStatus
-	if interval == "1h" {
+	if interval == "1h" || interval == "3d" {
 		if price > ema25 && ema25 > ema50 {
 			status = UP
 		} else if price < ema25 && ema25 < ema50 {
