@@ -1,0 +1,684 @@
+===== 趋势分析结果 (2025-08-10 00:00:02) =====
+[2025-08-10 00:00:01] BTCUSDT 5m: 当前价格=116855.56, EMA25=116920.99, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 00:00:01] BTCUSDT 15m: 当前价格=116945.98, EMA25=116907.30, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:00:01] BTCUSDT 1h: 当前价格=116785.51, EMA25=116497.36, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 00:00:02] ETHUSDT 5m: 当前价格=4197.52, EMA25=4194.40, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:00:02] ETHUSDT 15m: 当前价格=4190.39, EMA25=4163.58, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:00:02] ETHUSDT 1h: 当前价格=4105.93, EMA25=4009.72, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 00:15:02) =====
+[2025-08-10 00:15:01] BTCUSDT 5m: 当前价格=116842.35, EMA25=116906.66, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 00:15:01] BTCUSDT 15m: 当前价格=116933.67, EMA25=116902.56, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:15:01] BTCUSDT 1h: 当前价格=116785.16, EMA25=116508.48, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 00:15:02] ETHUSDT 5m: 当前价格=4200.59, EMA25=4196.37, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:15:02] ETHUSDT 15m: 当前价格=4192.16, EMA25=4165.54, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:15:02] ETHUSDT 1h: 当前价格=4114.20, EMA25=4017.71, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 00:30:02) =====
+[2025-08-10 00:30:01] BTCUSDT 5m: 当前价格=116812.13, EMA25=116883.50, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 00:30:01] BTCUSDT 15m: 当前价格=116913.75, EMA25=116893.62, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:30:01] BTCUSDT 1h: 当前价格=116777.00, EMA25=116504.32, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 00:30:02] ETHUSDT 5m: 当前价格=4204.31, EMA25=4198.83, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:30:02] ETHUSDT 15m: 当前价格=4193.99, EMA25=4167.52, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:30:02] ETHUSDT 1h: 当前价格=4114.42, EMA25=4017.82, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 00:45:02) =====
+[2025-08-10 00:45:01] BTCUSDT 5m: 当前价格=116783.76, EMA25=116860.39, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 00:45:01] BTCUSDT 15m: 当前价格=116896.78, EMA25=116885.76, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:45:01] BTCUSDT 1h: 当前价格=116778.40, EMA25=116505.03, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 00:45:01] ETHUSDT 5m: 当前价格=4205.40, EMA25=4200.03, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:45:02] ETHUSDT 15m: 当前价格=4195.12, EMA25=4169.13, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 00:45:02] ETHUSDT 1h: 当前价格=4113.85, EMA25=4017.53, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 01:00:02) =====
+[2025-08-10 01:00:01] BTCUSDT 5m: 当前价格=116746.57, EMA25=116832.01, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:00:01] BTCUSDT 15m: 当前价格=116873.71, EMA25=116874.43, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:00:01] BTCUSDT 1h: 当前价格=116771.00, EMA25=116501.26, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 01:00:01] ETHUSDT 5m: 当前价格=4205.24, EMA25=4200.54, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:00:02] ETHUSDT 15m: 当前价格=4195.93, EMA25=4170.56, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:00:02] ETHUSDT 1h: 当前价格=4113.66, EMA25=4017.44, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 01:15:02) =====
+[2025-08-10 01:15:01] BTCUSDT 5m: 当前价格=116728.56, EMA25=116812.68, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:15:01] BTCUSDT 15m: 当前价格=116860.23, EMA25=116867.53, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:15:01] BTCUSDT 1h: 当前价格=116765.41, EMA25=116508.99, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 01:15:01] ETHUSDT 5m: 当前价格=4206.39, EMA25=4201.66, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:15:02] ETHUSDT 15m: 当前价格=4197.41, EMA25=4172.31, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:15:02] ETHUSDT 1h: 当前价格=4121.48, EMA25=4025.19, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 01:30:02) =====
+[2025-08-10 01:30:01] BTCUSDT 5m: 当前价格=116718.85, EMA25=116798.01, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:30:01] BTCUSDT 15m: 当前价格=116847.58, EMA25=116860.79, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:30:01] BTCUSDT 1h: 当前价格=116765.22, EMA25=116508.89, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 01:30:01] ETHUSDT 5m: 当前价格=4209.03, EMA25=4203.59, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:30:02] ETHUSDT 15m: 当前价格=4199.21, EMA25=4174.22, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:30:02] ETHUSDT 1h: 当前价格=4121.88, EMA25=4025.40, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 01:45:02) =====
+[2025-08-10 01:45:01] BTCUSDT 5m: 当前价格=116700.86, EMA25=116779.50, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:45:01] BTCUSDT 15m: 当前价格=116831.51, EMA25=116852.08, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 01:45:01] BTCUSDT 1h: 当前价格=116760.81, EMA25=116506.65, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 01:45:01] ETHUSDT 5m: 当前价格=4212.41, EMA25=4205.99, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:45:02] ETHUSDT 15m: 当前价格=4201.46, EMA25=4176.34, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 01:45:02] ETHUSDT 1h: 当前价格=4122.46, EMA25=4025.69, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 02:00:02) =====
+[2025-08-10 02:00:01] BTCUSDT 5m: 当前价格=116679.20, EMA25=116759.04, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:00:01] BTCUSDT 15m: 当前价格=116815.79, EMA25=116843.26, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:00:01] BTCUSDT 1h: 当前价格=116759.92, EMA25=116506.19, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 02:00:01] ETHUSDT 5m: 当前价格=4215.79, EMA25=4208.49, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:00:02] ETHUSDT 15m: 当前价格=4203.90, EMA25=4178.57, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:00:02] ETHUSDT 1h: 当前价格=4122.86, EMA25=4025.90, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 02:15:02) =====
+[2025-08-10 02:15:01] BTCUSDT 5m: 当前价格=116665.47, EMA25=116742.76, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:15:01] BTCUSDT 15m: 当前价格=116799.72, EMA25=116833.99, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:15:01] BTCUSDT 1h: 当前价格=116748.16, EMA25=116510.14, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 02:15:01] ETHUSDT 5m: 当前价格=4218.48, EMA25=4210.74, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:15:02] ETHUSDT 15m: 当前价格=4205.56, EMA25=4180.41, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:15:02] ETHUSDT 1h: 当前价格=4130.68, EMA25=4033.69, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 02:30:02) =====
+[2025-08-10 02:30:01] BTCUSDT 5m: 当前价格=116659.73, EMA25=116730.98, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:30:01] BTCUSDT 15m: 当前价格=116786.15, EMA25=116825.73, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:30:01] BTCUSDT 1h: 当前价格=116749.42, EMA25=116510.79, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 02:30:01] ETHUSDT 5m: 当前价格=4220.98, EMA25=4212.93, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:30:02] ETHUSDT 15m: 当前价格=4207.81, EMA25=4182.54, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:30:02] ETHUSDT 1h: 当前价格=4131.45, EMA25=4034.08, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 02:45:04) =====
+[2025-08-10 02:45:01] BTCUSDT 5m: 当前价格=116645.76, EMA25=116715.56, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:45:01] BTCUSDT 15m: 当前价格=116770.30, EMA25=116816.10, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 02:45:01] BTCUSDT 1h: 当前价格=116746.10, EMA25=116509.09, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 02:45:03] ETHUSDT 5m: 当前价格=4224.14, EMA25=4215.84, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:45:04] ETHUSDT 15m: 当前价格=4209.42, EMA25=4184.35, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 02:45:04] ETHUSDT 1h: 当前价格=4131.01, EMA25=4033.86, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 03:00:02) =====
+[2025-08-10 03:00:01] BTCUSDT 5m: 当前价格=116629.05, EMA25=116698.64, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:00:01] BTCUSDT 15m: 当前价格=116753.87, EMA25=116805.89, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:00:01] BTCUSDT 1h: 当前价格=116746.08, EMA25=116509.09, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 03:00:01] ETHUSDT 5m: 当前价格=4227.72, EMA25=4218.37, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:00:02] ETHUSDT 15m: 当前价格=4211.81, EMA25=4186.56, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:00:02] ETHUSDT 1h: 当前价格=4131.92, EMA25=4034.32, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 03:15:02) =====
+[2025-08-10 03:15:01] BTCUSDT 5m: 当前价格=116627.14, EMA25=116689.73, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:15:01] BTCUSDT 15m: 当前价格=116742.65, EMA25=116798.13, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:15:01] BTCUSDT 1h: 当前价格=116735.45, EMA25=116512.96, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 03:15:02] ETHUSDT 5m: 当前价格=4231.74, EMA25=4221.56, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:15:02] ETHUSDT 15m: 当前价格=4214.42, EMA25=4188.88, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:15:02] ETHUSDT 1h: 当前价格=4140.65, EMA25=4042.60, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 03:30:02) =====
+[2025-08-10 03:30:01] BTCUSDT 5m: 当前价格=116613.83, EMA25=116675.61, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:30:01] BTCUSDT 15m: 当前价格=116729.52, EMA25=116789.26, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:30:01] BTCUSDT 1h: 当前价格=116732.86, EMA25=116511.64, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 03:30:01] ETHUSDT 5m: 当前价格=4234.35, EMA25=4224.08, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:30:02] ETHUSDT 15m: 当前价格=4217.02, EMA25=4191.21, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:30:02] ETHUSDT 1h: 当前价格=4140.90, EMA25=4042.73, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 03:45:04) =====
+[2025-08-10 03:45:01] BTCUSDT 5m: 当前价格=116594.53, EMA25=116658.40, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:45:01] BTCUSDT 15m: 当前价格=116714.05, EMA25=116779.02, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 03:45:03] BTCUSDT 1h: 当前价格=116729.33, EMA25=116509.84, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 03:45:03] ETHUSDT 5m: 当前价格=4238.17, EMA25=4227.24, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:45:04] ETHUSDT 15m: 当前价格=4220.46, EMA25=4193.97, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 03:45:04] ETHUSDT 1h: 当前价格=4141.89, EMA25=4043.23, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 04:00:02) =====
+[2025-08-10 04:00:01] BTCUSDT 5m: 当前价格=116573.30, EMA25=116639.93, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:00:01] BTCUSDT 15m: 当前价格=116697.57, EMA25=116768.08, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:00:01] BTCUSDT 1h: 当前价格=116727.15, EMA25=116508.73, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 04:00:01] ETHUSDT 5m: 当前价格=4242.56, EMA25=4230.81, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:00:02] ETHUSDT 15m: 当前价格=4223.23, EMA25=4196.42, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:00:02] ETHUSDT 1h: 当前价格=4141.52, EMA25=4043.04, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 04:15:02) =====
+[2025-08-10 04:15:01] BTCUSDT 5m: 当前价格=116556.43, EMA25=116623.42, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:15:01] BTCUSDT 15m: 当前价格=116682.85, EMA25=116757.81, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:15:01] BTCUSDT 1h: 当前价格=116710.16, EMA25=116508.63, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 04:15:01] ETHUSDT 5m: 当前价格=4248.17, EMA25=4235.10, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:15:02] ETHUSDT 15m: 当前价格=4226.86, EMA25=4199.32, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:15:02] ETHUSDT 1h: 当前价格=4151.43, EMA25=4051.95, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 04:29:59) =====
+[2025-08-10 04:29:58] BTCUSDT 5m: 当前价格=116562.98, EMA25=116619.00, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:29:59] BTCUSDT 15m: 当前价格=116683.54, EMA25=116755.22, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:29:59] BTCUSDT 1h: 当前价格=116725.06, EMA25=116516.23, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 04:29:59] ETHUSDT 5m: 当前价格=4252.91, EMA25=4239.09, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:29:59] ETHUSDT 15m: 当前价格=4230.54, EMA25=4202.28, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:29:59] ETHUSDT 1h: 当前价格=4151.77, EMA25=4052.13, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 04:44:59) =====
+[2025-08-10 04:44:58] BTCUSDT 5m: 当前价格=116610.27, EMA25=116637.42, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:44:59] BTCUSDT 15m: 当前价格=116698.80, EMA25=116760.19, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:44:59] BTCUSDT 1h: 当前价格=116739.03, EMA25=116523.35, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 04:44:59] ETHUSDT 5m: 当前价格=4257.44, EMA25=4243.03, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:44:59] ETHUSDT 15m: 当前价格=4233.86, EMA25=4205.07, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:44:59] ETHUSDT 1h: 当前价格=4152.11, EMA25=4052.30, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 04:59:59) =====
+[2025-08-10 04:59:58] BTCUSDT 5m: 当前价格=116635.86, EMA25=116647.95, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:59:59] BTCUSDT 15m: 当前价格=116701.43, EMA25=116759.12, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 04:59:59] BTCUSDT 1h: 当前价格=116727.59, EMA25=116517.52, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 04:59:59] ETHUSDT 5m: 当前价格=4262.08, EMA25=4247.10, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:59:59] ETHUSDT 15m: 当前价格=4238.01, EMA25=4208.31, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 04:59:59] ETHUSDT 1h: 当前价格=4152.75, EMA25=4052.63, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 05:14:59) =====
+[2025-08-10 05:14:58] BTCUSDT 5m: 当前价格=116648.49, EMA25=116653.36, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:14:59] BTCUSDT 15m: 当前价格=116696.94, EMA25=116754.57, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:14:59] BTCUSDT 1h: 当前价格=116721.10, EMA25=116522.45, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 05:14:59] ETHUSDT 5m: 当前价格=4267.56, EMA25=4251.69, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:14:59] ETHUSDT 15m: 当前价格=4242.00, EMA25=4211.51, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:14:59] ETHUSDT 1h: 当前价格=4163.33, EMA25=4061.95, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 05:29:59) =====
+[2025-08-10 05:29:58] BTCUSDT 5m: 当前价格=116612.49, EMA25=116634.08, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:29:59] BTCUSDT 15m: 当前价格=116671.43, EMA25=116739.31, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:29:59] BTCUSDT 1h: 当前价格=116699.72, EMA25=116511.55, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 05:29:59] ETHUSDT 5m: 当前价格=4268.81, EMA25=4254.17, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:29:59] ETHUSDT 15m: 当前价格=4243.89, EMA25=4213.68, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:29:59] ETHUSDT 1h: 当前价格=4161.68, EMA25=4061.11, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 05:44:59) =====
+[2025-08-10 05:44:58] BTCUSDT 5m: 当前价格=116572.70, EMA25=116610.72, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:44:59] BTCUSDT 15m: 当前价格=116649.78, EMA25=116725.61, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:44:59] BTCUSDT 1h: 当前价格=116701.62, EMA25=116512.52, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 05:44:59] ETHUSDT 5m: 当前价格=4269.37, EMA25=4256.14, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:44:59] ETHUSDT 15m: 当前价格=4245.89, EMA25=4215.88, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:44:59] ETHUSDT 1h: 当前价格=4161.88, EMA25=4061.21, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 05:59:59) =====
+[2025-08-10 05:59:58] BTCUSDT 5m: 当前价格=116557.62, EMA25=116598.43, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:59:59] BTCUSDT 15m: 当前价格=116636.65, EMA25=116715.94, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 05:59:59] BTCUSDT 1h: 当前价格=116708.47, EMA25=116516.01, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 05:59:59] ETHUSDT 5m: 当前价格=4272.57, EMA25=4259.34, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:59:59] ETHUSDT 15m: 当前价格=4248.32, EMA25=4218.29, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 05:59:59] ETHUSDT 1h: 当前价格=4162.40, EMA25=4061.48, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 06:14:59) =====
+[2025-08-10 06:14:58] BTCUSDT 5m: 当前价格=116549.24, EMA25=116589.36, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:14:59] BTCUSDT 15m: 当前价格=116628.26, EMA25=116708.55, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:14:59] BTCUSDT 1h: 当前价格=116694.54, EMA25=116516.46, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 06:14:59] ETHUSDT 5m: 当前价格=4276.11, EMA25=4262.71, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:14:59] ETHUSDT 15m: 当前价格=4251.30, EMA25=4220.99, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:14:59] ETHUSDT 1h: 当前价格=4172.06, EMA25=4070.36, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 06:30:00) =====
+[2025-08-10 06:29:58] BTCUSDT 5m: 当前价格=116567.16, EMA25=116594.26, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:29:59] BTCUSDT 15m: 当前价格=116628.91, EMA25=116705.73, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:29:59] BTCUSDT 1h: 当前价格=116702.94, EMA25=116520.74, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 06:29:59] ETHUSDT 5m: 当前价格=4282.26, EMA25=4267.47, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:29:59] ETHUSDT 15m: 当前价格=4255.07, EMA25=4224.10, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:30:00] ETHUSDT 1h: 当前价格=4173.05, EMA25=4070.86, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 06:44:59) =====
+[2025-08-10 06:44:58] BTCUSDT 5m: 当前价格=116564.25, EMA25=116589.67, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:44:59] BTCUSDT 15m: 当前价格=116622.83, EMA25=116699.62, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:44:59] BTCUSDT 1h: 当前价格=116696.27, EMA25=116517.34, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 06:44:59] ETHUSDT 5m: 当前价格=4281.19, EMA25=4268.60, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:44:59] ETHUSDT 15m: 当前价格=4256.18, EMA25=4225.88, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:44:59] ETHUSDT 1h: 当前价格=4170.62, EMA25=4069.63, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 06:59:59) =====
+[2025-08-10 06:59:58] BTCUSDT 5m: 当前价格=116552.32, EMA25=116580.50, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:59:59] BTCUSDT 15m: 当前价格=116613.57, EMA25=116691.89, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 06:59:59] BTCUSDT 1h: 当前价格=116692.61, EMA25=116515.47, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 06:59:59] ETHUSDT 5m: 当前价格=4277.07, EMA25=4267.84, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:59:59] ETHUSDT 15m: 当前价格=4256.64, EMA25=4227.30, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 06:59:59] ETHUSDT 1h: 当前价格=4170.05, EMA25=4069.33, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 07:15:02) =====
+[2025-08-10 07:14:58] BTCUSDT 5m: 当前价格=116537.91, EMA25=116569.82, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:14:59] BTCUSDT 15m: 当前价格=116601.06, EMA25=116682.44, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:14:59] BTCUSDT 1h: 当前价格=116674.02, EMA25=116512.94, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 07:14:59] ETHUSDT 5m: 当前价格=4273.70, EMA25=4267.12, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:14:59] ETHUSDT 15m: 当前价格=4256.63, EMA25=4228.45, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:15:02] ETHUSDT 1h: 当前价格=4176.71, EMA25=4076.68, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 07:29:59) =====
+[2025-08-10 07:29:58] BTCUSDT 5m: 当前价格=116518.62, EMA25=116556.09, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:29:59] BTCUSDT 15m: 当前价格=116585.89, EMA25=116671.51, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:29:59] BTCUSDT 1h: 当前价格=116670.39, EMA25=116511.09, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 07:29:59] ETHUSDT 5m: 当前价格=4269.32, EMA25=4265.55, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:29:59] ETHUSDT 15m: 当前价格=4256.29, EMA25=4229.38, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:29:59] ETHUSDT 1h: 当前价格=4176.38, EMA25=4076.51, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 07:44:59) =====
+[2025-08-10 07:44:58] BTCUSDT 5m: 当前价格=116502.50, EMA25=116543.39, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:44:59] BTCUSDT 15m: 当前价格=116572.77, EMA25=116661.47, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:44:59] BTCUSDT 1h: 当前价格=116671.28, EMA25=116511.54, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 07:44:59] ETHUSDT 5m: 当前价格=4267.24, EMA25=4264.87, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:44:59] ETHUSDT 15m: 当前价格=4256.65, EMA25=4230.62, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:44:59] ETHUSDT 1h: 当前价格=4177.06, EMA25=4076.86, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 07:59:59) =====
+[2025-08-10 07:59:58] BTCUSDT 5m: 当前价格=116489.32, EMA25=116531.83, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:59:59] BTCUSDT 15m: 当前价格=116561.39, EMA25=116652.19, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 07:59:59] BTCUSDT 1h: 当前价格=116671.79, EMA25=116511.80, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 07:59:59] ETHUSDT 5m: 当前价格=4266.32, EMA25=4264.66, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:59:59] ETHUSDT 15m: 当前价格=4256.89, EMA25=4231.76, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 07:59:59] ETHUSDT 1h: 当前价格=4176.93, EMA25=4076.79, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 08:15:00) =====
+[2025-08-10 08:14:59] BTCUSDT 5m: 当前价格=116492.42, EMA25=116528.60, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 08:14:59] BTCUSDT 15m: 当前价格=116558.80, EMA25=116647.31, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 08:14:59] BTCUSDT 1h: 当前价格=116660.71, EMA25=116512.43, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 08:14:59] ETHUSDT 5m: 当前价格=4265.23, EMA25=4264.26, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:14:59] ETHUSDT 15m: 当前价格=4257.51, EMA25=4233.06, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:15:00] ETHUSDT 1h: 当前价格=4183.70, EMA25=4084.17, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 08:30:00) =====
+[2025-08-10 08:29:58] BTCUSDT 5m: 当前价格=116505.44, EMA25=116531.46, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 08:29:59] BTCUSDT 15m: 当前价格=116558.07, EMA25=116643.48, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 08:29:59] BTCUSDT 1h: 当前价格=116662.04, EMA25=116513.10, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 08:29:59] ETHUSDT 5m: 当前价格=4265.38, EMA25=4264.46, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:29:59] ETHUSDT 15m: 当前价格=4257.78, EMA25=4234.16, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:30:00] ETHUSDT 1h: 当前价格=4183.43, EMA25=4084.03, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 08:44:59) =====
+[2025-08-10 08:44:58] BTCUSDT 5m: 当前价格=116515.76, EMA25=116533.87, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 08:44:59] BTCUSDT 15m: 当前价格=116560.08, EMA25=116641.15, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 08:44:59] BTCUSDT 1h: 当前价格=116665.06, EMA25=116514.65, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 08:44:59] ETHUSDT 5m: 当前价格=4268.36, EMA25=4266.12, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:44:59] ETHUSDT 15m: 当前价格=4259.91, EMA25=4236.17, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:44:59] ETHUSDT 1h: 当前价格=4185.25, EMA25=4084.96, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 08:59:59) =====
+[2025-08-10 08:59:58] BTCUSDT 5m: 当前价格=116551.64, EMA25=116550.78, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:59:59] BTCUSDT 15m: 当前价格=116570.16, EMA25=116643.11, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 08:59:59] BTCUSDT 1h: 当前价格=116673.28, EMA25=116518.84, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 08:59:59] ETHUSDT 5m: 当前价格=4277.93, EMA25=4271.44, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:59:59] ETHUSDT 15m: 当前价格=4263.79, EMA25=4239.09, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 08:59:59] ETHUSDT 1h: 当前价格=4187.14, EMA25=4085.93, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 09:14:59) =====
+[2025-08-10 09:14:58] BTCUSDT 5m: 当前价格=116564.60, EMA25=116557.93, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:14:59] BTCUSDT 15m: 当前价格=116569.75, EMA25=116640.04, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 09:14:59] BTCUSDT 1h: 当前价格=116665.74, EMA25=116521.05, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 09:14:59] ETHUSDT 5m: 当前价格=4281.86, EMA25=4274.28, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:14:59] ETHUSDT 15m: 当前价格=4265.62, EMA25=4240.98, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:14:59] ETHUSDT 1h: 当前价格=4194.86, EMA25=4093.83, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 09:30:00) =====
+[2025-08-10 09:29:58] BTCUSDT 5m: 当前价格=116568.65, EMA25=116560.89, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:29:59] BTCUSDT 15m: 当前价格=116569.65, EMA25=116637.24, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 09:29:59] BTCUSDT 1h: 当前价格=116665.22, EMA25=116520.79, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 09:29:59] ETHUSDT 5m: 当前价格=4284.74, EMA25=4276.67, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:29:59] ETHUSDT 15m: 当前价格=4267.75, EMA25=4243.03, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:30:00] ETHUSDT 1h: 当前价格=4195.31, EMA25=4094.06, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 09:45:00) =====
+[2025-08-10 09:44:58] BTCUSDT 5m: 当前价格=116573.02, EMA25=116564.10, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:44:59] BTCUSDT 15m: 当前价格=116570.00, EMA25=116634.76, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 09:44:59] BTCUSDT 1h: 当前价格=116665.65, EMA25=116521.01, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 09:44:59] ETHUSDT 5m: 当前价格=4290.96, EMA25=4280.86, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:44:59] ETHUSDT 15m: 当前价格=4271.50, EMA25=4245.92, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:45:00] ETHUSDT 1h: 当前价格=4197.10, EMA25=4094.97, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 09:59:59) =====
+[2025-08-10 09:59:58] BTCUSDT 5m: 当前价格=116563.37, EMA25=116559.99, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:59:59] BTCUSDT 15m: 当前价格=116567.36, EMA25=116630.88, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 09:59:59] BTCUSDT 1h: 当前价格=116662.71, EMA25=116519.50, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 09:59:59] ETHUSDT 5m: 当前价格=4292.95, EMA25=4283.06, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:59:59] ETHUSDT 15m: 当前价格=4273.69, EMA25=4248.04, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 09:59:59] ETHUSDT 1h: 当前价格=4195.75, EMA25=4094.28, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 10:15:00) =====
+[2025-08-10 10:14:58] BTCUSDT 5m: 当前价格=116566.38, EMA25=116561.92, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:14:59] BTCUSDT 15m: 当前价格=116568.31, EMA25=116628.87, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 10:14:59] BTCUSDT 1h: 当前价格=116656.32, EMA25=116521.86, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+[2025-08-10 10:14:59] ETHUSDT 5m: 当前价格=4291.67, EMA25=4283.52, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:14:59] ETHUSDT 15m: 当前价格=4274.21, EMA25=4249.31, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:15:00] ETHUSDT 1h: 当前价格=4202.38, EMA25=4101.64, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 10:29:59) =====
+[2025-08-10 10:29:58] BTCUSDT 5m: 当前价格=116597.24, EMA25=116578.67, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:29:59] BTCUSDT 15m: 当前价格=116583.45, EMA25=116634.23, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 10:29:59] BTCUSDT 1h: 当前价格=116669.80, EMA25=116528.74, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 10:29:59] ETHUSDT 5m: 当前价格=4287.41, EMA25=4282.23, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:29:59] ETHUSDT 15m: 当前价格=4273.34, EMA25=4249.84, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:29:59] ETHUSDT 1h: 当前价格=4200.71, EMA25=4100.79, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 10:44:59) =====
+[2025-08-10 10:44:58] BTCUSDT 5m: 当前价格=116674.20, EMA25=116621.41, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:44:59] BTCUSDT 15m: 当前价格=116614.56, EMA25=116648.10, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 10:44:59] BTCUSDT 1h: 当前价格=116687.69, EMA25=116537.85, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 10:44:59] ETHUSDT 5m: 当前价格=4280.61, EMA25=4279.23, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:44:59] ETHUSDT 15m: 当前价格=4271.54, EMA25=4249.85, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:44:59] ETHUSDT 1h: 当前价格=4199.92, EMA25=4100.39, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 10:59:59) =====
+[2025-08-10 10:59:58] BTCUSDT 5m: 当前价格=116784.81, EMA25=116685.76, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:59:59] BTCUSDT 15m: 当前价格=116666.12, EMA25=116673.08, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 10:59:59] BTCUSDT 1h: 当前价格=116709.66, EMA25=116549.05, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 10:59:59] ETHUSDT 5m: 当前价格=4273.62, EMA25=4275.69, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 10:59:59] ETHUSDT 15m: 当前价格=4269.64, EMA25=4249.73, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 10:59:59] ETHUSDT 1h: 当前价格=4199.64, EMA25=4100.25, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 11:15:00) =====
+[2025-08-10 11:14:58] BTCUSDT 5m: 当前价格=116987.98, EMA25=116803.91, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:14:59] BTCUSDT 15m: 当前价格=116759.67, EMA25=116720.50, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:14:59] BTCUSDT 1h: 当前价格=116799.87, EMA25=116601.34, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 11:14:59] ETHUSDT 5m: 当前价格=4267.49, EMA25=4272.22, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 11:14:59] ETHUSDT 15m: 当前价格=4267.54, EMA25=4249.44, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:15:00] ETHUSDT 1h: 当前价格=4202.95, EMA25=4105.83, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 11:29:59) =====
+[2025-08-10 11:29:58] BTCUSDT 5m: 当前价格=117239.16, EMA25=116957.10, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:29:59] BTCUSDT 15m: 当前价格=116882.34, EMA25=116784.56, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:29:59] BTCUSDT 1h: 当前价格=116837.04, EMA25=116620.29, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 11:29:59] ETHUSDT 5m: 当前价格=4261.10, EMA25=4268.32, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 11:29:59] ETHUSDT 15m: 当前价格=4264.85, EMA25=4248.78, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:29:59] ETHUSDT 1h: 当前价格=4202.05, EMA25=4105.37, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 11:44:59) =====
+[2025-08-10 11:44:58] BTCUSDT 5m: 当前价格=117458.90, EMA25=117105.58, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:44:59] BTCUSDT 15m: 当前价格=116980.17, EMA25=116838.24, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:44:59] BTCUSDT 1h: 当前价格=116823.23, EMA25=116613.25, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 11:44:59] ETHUSDT 5m: 当前价格=4254.20, EMA25=4263.83, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 11:44:59] ETHUSDT 15m: 当前价格=4262.63, EMA25=4248.28, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:44:59] ETHUSDT 1h: 当前价格=4202.32, EMA25=4105.51, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 11:59:59) =====
+[2025-08-10 11:59:58] BTCUSDT 5m: 当前价格=117644.15, EMA25=117243.18, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:59:59] BTCUSDT 15m: 当前价格=117095.88, EMA25=116902.82, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:59:59] BTCUSDT 1h: 当前价格=116845.32, EMA25=116624.51, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 11:59:59] ETHUSDT 5m: 当前价格=4251.61, EMA25=4261.37, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 11:59:59] ETHUSDT 15m: 当前价格=4261.01, EMA25=4248.01, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 11:59:59] ETHUSDT 1h: 当前价格=4202.82, EMA25=4105.76, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 12:15:00) =====
+[2025-08-10 12:14:58] BTCUSDT 5m: 当前价格=117855.24, EMA25=117400.33, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:14:59] BTCUSDT 15m: 当前价格=117217.30, EMA25=116972.30, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:14:59] BTCUSDT 1h: 当前价格=116986.02, EMA25=116704.91, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 12:14:59] ETHUSDT 5m: 当前价格=4248.37, EMA25=4258.54, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 12:14:59] ETHUSDT 15m: 当前价格=4259.49, EMA25=4247.75, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:15:00] ETHUSDT 1h: 当前价格=4205.77, EMA25=4111.07, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 12:29:59) =====
+[2025-08-10 12:29:58] BTCUSDT 5m: 当前价格=118007.92, EMA25=117532.65, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:29:59] BTCUSDT 15m: 当前价格=117324.42, EMA25=117036.53, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:29:59] BTCUSDT 1h: 当前价格=116980.74, EMA25=116702.22, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 12:29:59] ETHUSDT 5m: 当前价格=4248.33, EMA25=4257.35, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 12:29:59] ETHUSDT 15m: 当前价格=4258.74, EMA25=4247.83, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:29:59] ETHUSDT 1h: 当前价格=4206.31, EMA25=4111.35, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 12:44:59) =====
+[2025-08-10 12:44:58] BTCUSDT 5m: 当前价格=118105.55, EMA25=117638.47, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:44:59] BTCUSDT 15m: 当前价格=117404.92, EMA25=117088.86, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:44:59] BTCUSDT 1h: 当前价格=116963.18, EMA25=116693.27, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 12:44:59] ETHUSDT 5m: 当前价格=4249.59, EMA25=4257.00, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 12:44:59] ETHUSDT 15m: 当前价格=4258.38, EMA25=4248.07, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:44:59] ETHUSDT 1h: 当前价格=4206.70, EMA25=4111.54, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 13:00:00) =====
+[2025-08-10 12:59:58] BTCUSDT 5m: 当前价格=118185.91, EMA25=117733.92, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:59:59] BTCUSDT 15m: 当前价格=117485.62, EMA25=117142.39, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 12:59:59] BTCUSDT 1h: 当前价格=116970.05, EMA25=116696.77, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 12:59:59] ETHUSDT 5m: 当前价格=4250.14, EMA25=4256.47, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 13:00:00] ETHUSDT 15m: 当前价格=4257.73, EMA25=4248.14, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:00:00] ETHUSDT 1h: 当前价格=4206.39, EMA25=4111.39, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 13:15:00) =====
+[2025-08-10 13:14:59] BTCUSDT 5m: 当前价格=118207.53, EMA25=117796.76, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:14:59] BTCUSDT 15m: 当前价格=117542.67, EMA25=117184.93, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:14:59] BTCUSDT 1h: 当前价格=117066.77, EMA25=116756.79, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 13:14:59] ETHUSDT 5m: 当前价格=4247.72, EMA25=4254.48, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 13:14:59] ETHUSDT 15m: 当前价格=4256.24, EMA25=4247.76, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:15:00] ETHUSDT 1h: 当前价格=4208.82, EMA25=4116.35, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 13:30:00) =====
+[2025-08-10 13:29:58] BTCUSDT 5m: 当前价格=118158.96, EMA25=117817.85, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:29:59] BTCUSDT 15m: 当前价格=117567.09, EMA25=117211.41, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:29:59] BTCUSDT 1h: 当前价格=117038.52, EMA25=116742.39, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 13:29:59] ETHUSDT 5m: 当前价格=4243.48, EMA25=4251.51, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 13:29:59] ETHUSDT 15m: 当前价格=4253.02, EMA25=4246.45, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:30:00] ETHUSDT 1h: 当前价格=4207.08, EMA25=4115.46, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 13:44:59) =====
+[2025-08-10 13:44:58] BTCUSDT 5m: 当前价格=118161.55, EMA25=117857.62, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:44:59] BTCUSDT 15m: 当前价格=117617.46, EMA25=117251.04, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:44:59] BTCUSDT 1h: 当前价格=117066.34, EMA25=116756.58, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 13:44:59] ETHUSDT 5m: 当前价格=4240.61, EMA25=4249.07, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 13:44:59] ETHUSDT 15m: 当前价格=4251.55, EMA25=4245.96, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:44:59] ETHUSDT 1h: 当前价格=4208.52, EMA25=4116.20, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 14:00:00) =====
+[2025-08-10 13:59:58] BTCUSDT 5m: 当前价格=118128.62, EMA25=117874.62, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:59:59] BTCUSDT 15m: 当前价格=117646.88, EMA25=117280.41, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 13:59:59] BTCUSDT 1h: 当前价格=117049.27, EMA25=116747.87, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 13:59:59] ETHUSDT 5m: 当前价格=4236.50, EMA25=4245.95, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 13:59:59] ETHUSDT 15m: 当前价格=4249.04, EMA25=4244.90, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:00:00] ETHUSDT 1h: 当前价格=4207.36, EMA25=4115.61, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 14:15:00) =====
+[2025-08-10 14:14:58] BTCUSDT 5m: 当前价格=118113.02, EMA25=117895.22, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:14:59] BTCUSDT 15m: 当前价格=117672.72, EMA25=117307.95, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:14:59] BTCUSDT 1h: 当前价格=117121.08, EMA25=116796.30, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 14:14:59] ETHUSDT 5m: 当前价格=4233.38, EMA25=4243.23, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 14:14:59] ETHUSDT 15m: 当前价格=4246.84, EMA25=4243.94, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:14:59] ETHUSDT 1h: 当前价格=4208.37, EMA25=4119.72, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 14:29:59) =====
+[2025-08-10 14:29:59] BTCUSDT 5m: 当前价格=118046.48, EMA25=117884.55, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:29:59] BTCUSDT 15m: 当前价格=117683.05, EMA25=117327.51, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:29:59] BTCUSDT 1h: 当前价格=117108.18, EMA25=116789.72, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 14:29:59] ETHUSDT 5m: 当前价格=4228.01, EMA25=4239.25, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 14:29:59] ETHUSDT 15m: 当前价格=4244.18, EMA25=4242.70, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:29:59] ETHUSDT 1h: 当前价格=4207.86, EMA25=4119.46, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 14:45:00) =====
+[2025-08-10 14:44:58] BTCUSDT 5m: 当前价格=117995.22, EMA25=117875.32, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:44:59] BTCUSDT 15m: 当前价格=117701.81, EMA25=117351.00, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:44:59] BTCUSDT 1h: 当前价格=117117.47, EMA25=116794.46, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 14:44:59] ETHUSDT 5m: 当前价格=4227.12, EMA25=4237.50, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 14:44:59] ETHUSDT 15m: 当前价格=4243.12, EMA25=4242.21, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:45:00] ETHUSDT 1h: 当前价格=4209.13, EMA25=4120.11, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 15:00:00) =====
+[2025-08-10 14:59:58] BTCUSDT 5m: 当前价格=117993.96, EMA25=117888.02, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:59:59] BTCUSDT 15m: 当前价格=117727.20, EMA25=117377.70, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 14:59:59] BTCUSDT 1h: 当前价格=117124.85, EMA25=116798.23, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 14:59:59] ETHUSDT 5m: 当前价格=4226.56, EMA25=4236.02, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 14:59:59] ETHUSDT 15m: 当前价格=4241.61, EMA25=4241.48, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:00:00] ETHUSDT 1h: 当前价格=4208.64, EMA25=4119.86, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 15:14:59) =====
+[2025-08-10 15:14:58] BTCUSDT 5m: 当前价格=118021.47, EMA25=117914.68, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:14:59] BTCUSDT 15m: 当前价格=117756.92, EMA25=117406.56, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:14:59] BTCUSDT 1h: 当前价格=117200.91, EMA25=116849.81, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 15:14:59] ETHUSDT 5m: 当前价格=4226.68, EMA25=4235.02, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:14:59] ETHUSDT 15m: 当前价格=4240.44, EMA25=4240.89, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:14:59] ETHUSDT 1h: 当前价格=4209.98, EMA25=4124.03, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 15:30:00) =====
+[2025-08-10 15:29:58] BTCUSDT 5m: 当前价格=118040.93, EMA25=117937.18, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:29:59] BTCUSDT 15m: 当前价格=117779.12, EMA25=117431.61, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:29:59] BTCUSDT 1h: 当前价格=117195.67, EMA25=116847.14, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 15:29:59] ETHUSDT 5m: 当前价格=4224.60, EMA25=4232.99, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:29:59] ETHUSDT 15m: 当前价格=4238.07, EMA25=4239.66, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:30:00] ETHUSDT 1h: 当前价格=4208.73, EMA25=4123.38, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 15:44:59) =====
+[2025-08-10 15:44:58] BTCUSDT 5m: 当前价格=117970.67, EMA25=117912.16, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:44:59] BTCUSDT 15m: 当前价格=117764.74, EMA25=117437.91, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:44:59] BTCUSDT 1h: 当前价格=117160.79, EMA25=116829.35, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 15:44:59] ETHUSDT 5m: 当前价格=4216.54, EMA25=4227.81, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:44:59] ETHUSDT 15m: 当前价格=4233.29, EMA25=4237.16, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:44:59] ETHUSDT 1h: 当前价格=4206.12, EMA25=4122.05, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 15:59:59) =====
+[2025-08-10 15:59:58] BTCUSDT 5m: 当前价格=117918.40, EMA25=117891.03, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:59:59] BTCUSDT 15m: 当前价格=117762.46, EMA25=117449.57, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 15:59:59] BTCUSDT 1h: 当前价格=117174.49, EMA25=116836.34, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 15:59:59] ETHUSDT 5m: 当前价格=4209.77, EMA25=4222.96, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:59:59] ETHUSDT 15m: 当前价格=4229.46, EMA25=4235.06, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 15:59:59] ETHUSDT 1h: 当前价格=4206.77, EMA25=4122.39, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 16:15:00) =====
+[2025-08-10 16:14:58] BTCUSDT 5m: 当前价格=117886.02, EMA25=117876.39, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:14:59] BTCUSDT 15m: 当前价格=117777.99, EMA25=117469.80, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:14:59] BTCUSDT 1h: 当前价格=117235.27, EMA25=116880.58, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 16:14:59] ETHUSDT 5m: 当前价格=4202.24, EMA25=4217.44, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 16:14:59] ETHUSDT 15m: 当前价格=4226.45, EMA25=4233.31, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 16:15:00] ETHUSDT 1h: 当前价格=4205.48, EMA25=4125.04, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 16:29:59) =====
+[2025-08-10 16:29:58] BTCUSDT 5m: 当前价格=117931.58, EMA25=117901.65, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:29:59] BTCUSDT 15m: 当前价格=117805.68, EMA25=117496.08, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:29:59] BTCUSDT 1h: 当前价格=117245.03, EMA25=116885.56, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 16:29:59] ETHUSDT 5m: 当前价格=4201.90, EMA25=4215.53, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 16:29:59] ETHUSDT 15m: 当前价格=4224.81, EMA25=4232.20, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 16:29:59] ETHUSDT 1h: 当前价格=4206.56, EMA25=4125.59, EMA50=%!f(utils.TrendStatus=乱), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 16:45:02) =====
+[2025-08-10 16:44:58] BTCUSDT 5m: 当前价格=117970.27, EMA25=117925.62, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:45:01] BTCUSDT 15m: 当前价格=117827.90, EMA25=117519.55, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:45:01] BTCUSDT 1h: 当前价格=117245.27, EMA25=116885.68, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 16:45:01] ETHUSDT 5m: 当前价格=4203.18, EMA25=4214.67, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 16:45:01] ETHUSDT 15m: 当前价格=4223.47, EMA25=4231.23, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 16:45:02] ETHUSDT 1h: 当前价格=4206.81, EMA25=4125.71, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 17:00:00) =====
+[2025-08-10 16:59:58] BTCUSDT 5m: 当前价格=118035.22, EMA25=117965.04, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:59:59] BTCUSDT 15m: 当前价格=117861.23, EMA25=117548.64, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 16:59:59] BTCUSDT 1h: 当前价格=117258.06, EMA25=116892.20, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 16:59:59] ETHUSDT 5m: 当前价格=4205.14, EMA25=4214.42, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 16:59:59] ETHUSDT 15m: 当前价格=4222.36, EMA25=4230.36, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:00:00] ETHUSDT 1h: 当前价格=4206.93, EMA25=4125.78, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 17:14:59) =====
+[2025-08-10 17:14:58] BTCUSDT 5m: 当前价格=118084.16, EMA25=117998.93, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:14:59] BTCUSDT 15m: 当前价格=117893.69, EMA25=117577.45, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:14:59] BTCUSDT 1h: 当前价格=117336.91, EMA25=116946.76, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 17:14:59] ETHUSDT 5m: 当前价格=4206.79, EMA25=4214.24, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:14:59] ETHUSDT 15m: 当前价格=4221.84, EMA25=4229.78, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:14:59] ETHUSDT 1h: 当前价格=4207.61, EMA25=4129.31, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 17:30:00) =====
+[2025-08-10 17:29:58] BTCUSDT 5m: 当前价格=118120.98, EMA25=118028.20, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:29:59] BTCUSDT 15m: 当前价格=117919.92, EMA25=117603.23, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:29:59] BTCUSDT 1h: 当前价格=117333.67, EMA25=116945.11, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 17:29:59] ETHUSDT 5m: 当前价格=4208.62, EMA25=4214.36, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:29:59] ETHUSDT 15m: 当前价格=4221.44, EMA25=4229.26, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:30:00] ETHUSDT 1h: 当前价格=4207.73, EMA25=4129.37, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 17:45:00) =====
+[2025-08-10 17:44:58] BTCUSDT 5m: 当前价格=118122.55, EMA25=118039.72, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:44:59] BTCUSDT 15m: 当前价格=117932.85, EMA25=117622.24, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:44:59] BTCUSDT 1h: 当前价格=117321.82, EMA25=116939.07, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 17:44:59] ETHUSDT 5m: 当前价格=4211.45, EMA25=4215.21, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:44:59] ETHUSDT 15m: 当前价格=4221.43, EMA25=4228.95, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:45:00] ETHUSDT 1h: 当前价格=4208.03, EMA25=4129.52, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 17:59:59) =====
+[2025-08-10 17:59:58] BTCUSDT 5m: 当前价格=118162.76, EMA25=118070.60, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:59:59] BTCUSDT 15m: 当前价格=117956.81, EMA25=117646.62, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 17:59:59] BTCUSDT 1h: 当前价格=117334.94, EMA25=116945.76, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 17:59:59] ETHUSDT 5m: 当前价格=4214.27, EMA25=4216.28, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:59:59] ETHUSDT 15m: 当前价格=4221.61, EMA25=4228.75, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 17:59:59] ETHUSDT 1h: 当前价格=4208.25, EMA25=4129.63, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 18:14:59) =====
+[2025-08-10 18:14:58] BTCUSDT 5m: 当前价格=118157.15, EMA25=118078.13, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 18:14:59] BTCUSDT 15m: 当前价格=117970.30, EMA25=117665.66, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 18:14:59] BTCUSDT 1h: 当前价格=117397.05, EMA25=116992.68, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 18:14:59] ETHUSDT 5m: 当前价格=4215.12, EMA25=4216.51, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 18:14:59] ETHUSDT 15m: 当前价格=4221.35, EMA25=4228.33, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 18:14:59] ETHUSDT 1h: 当前价格=4209.01, EMA25=4133.10, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 18:16:40) =====
+[2025-08-10 18:16:39] BTCUSDT 5m: 当前价格=118150.65, EMA25=118077.88, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 18:16:39] BTCUSDT 15m: 当前价格=117978.17, EMA25=117681.57, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 18:16:39] BTCUSDT 1h: 当前价格=117393.14, EMA25=116990.68, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 18:16:40] ETHUSDT 5m: 当前价格=4215.03, EMA25=4216.41, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 18:16:40] ETHUSDT 15m: 当前价格=4220.76, EMA25=4227.76, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 18:16:40] ETHUSDT 1h: 当前价格=4208.75, EMA25=4132.97, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+
+===== 趋势分析结果 (2025-08-10 18:29:10) =====
+[2025-08-10 18:29:09] BTCUSDT 5m: 当前价格=118148.41, EMA25=118082.26, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 18:29:09] BTCUSDT 15m: 当前价格=117983.07, EMA25=117684.08, EMA50=%!f(utils.TrendStatus=金叉), 趋势=%!s(MISSING)
+[2025-08-10 18:29:10] BTCUSDT 1h: 当前价格=117398.04, EMA25=116993.18, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+[2025-08-10 18:29:10] ETHUSDT 5m: 当前价格=4215.15, EMA25=4216.37, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 18:29:10] ETHUSDT 15m: 当前价格=4220.73, EMA25=4227.75, EMA50=%!f(utils.TrendStatus=死叉), 趋势=%!s(MISSING)
+[2025-08-10 18:29:10] ETHUSDT 1h: 当前价格=4208.72, EMA25=4132.96, EMA50=%!f(utils.TrendStatus=多), 趋势=%!s(MISSING)
+==============================
+

@@ -27,15 +27,15 @@ func NewTrendAPI(port int, analyzer *TrendAnalyzer) *TrendAPI {
 
 // Start 启动API服务器
 func (api *TrendAPI) Start() error {
+	mux := http.NewServeMux()
 
-	http.HandleFunc("/api/trend/btc", api.handleTrendBTC)
-	http.HandleFunc("/api/trend/eth", api.handleTrendETH)
+	mux.HandleFunc("/api/trend/btc", api.handleTrendBTC)
+	mux.HandleFunc("/api/trend/eth", api.handleTrendETH)
 
-	// 启动服务器
 	addr := fmt.Sprintf(":%d", api.Port)
 	log.Printf("API服务器启动在 http://localhost%s", addr)
 
-	return http.ListenAndServe(addr, nil)
+	return http.ListenAndServe(addr, corsMiddleware(mux))
 }
 
 // UpdateResults 更新最新的趋势结果
@@ -167,4 +167,20 @@ func (api *TrendAPI) handleTrendETH(w http.ResponseWriter, r *http.Request) {
 			})
 		}
 	}
+}
+func corsMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// 允许任意来源跨域，或者这里写你的前端地址，比如 http://localhost:3000
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
+
+		// 预检请求直接返回 200
+		if r.Method == http.MethodOptions {
+			w.WriteHeader(http.StatusOK)
+			return
+		}
+
+		next.ServeHTTP(w, r)
+	})
 }
