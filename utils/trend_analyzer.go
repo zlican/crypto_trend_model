@@ -77,7 +77,7 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 		} else {
 			status = RANGE
 		}
-	} else if interval == "15m" || interval == "1D" {
+	} else if interval == "15m" || interval == "1d" {
 		if price > ema25 && ema25 > ema50 {
 			status = UPEMAGT
 		} else if price < ema25 && ema25 < ema50 {
