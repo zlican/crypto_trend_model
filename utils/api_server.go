@@ -74,8 +74,12 @@ func (api *TrendAPI) handleTrendBTC(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "RANGE"
 		} else if btcResult.Status == UPEMA {
 			apiStatus = "UPEMA"
-		} else {
+		} else if btcResult.Status == DOWNEMA {
 			apiStatus = "DOWNEMA"
+		} else if btcResult.Status == UPEMAGT {
+			apiStatus = "UPEMAGT"
+		} else if btcResult.Status == DOWNEMALT {
+			apiStatus = "DOWNEMALT"
 		}
 
 		if r.URL.Query().Get("format") == "text" {
@@ -133,9 +137,12 @@ func (api *TrendAPI) handleTrendETH(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "RANGE"
 		} else if ethResult.Status == UPEMA {
 			apiStatus = "UPEMA"
-		} else {
+		} else if ethResult.Status == DOWNEMA {
 			apiStatus = "DOWNEMA"
-
+		} else if ethResult.Status == UPEMAGT {
+			apiStatus = "UPEMAGT"
+		} else if ethResult.Status == DOWNEMALT {
+			apiStatus = "DOWNEMALT"
 		}
 
 		if r.URL.Query().Get("format") == "text" {
