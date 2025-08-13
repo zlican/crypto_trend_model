@@ -66,20 +66,12 @@ func (api *TrendAPI) handleTrendBTC(w http.ResponseWriter, r *http.Request) {
 	if btcResult, ok := api.latestResults[btcKey]; ok {
 		// 根据请求格式返回不同的响应
 		apiStatus := "unknown"
-		if btcResult.Status == UP {
-			apiStatus = "UP"
-		} else if btcResult.Status == DOWN {
-			apiStatus = "DOWN"
+		if btcResult.Status == BUYMACD {
+			apiStatus = "BUYMACD"
+		} else if btcResult.Status == SELLMACD {
+			apiStatus = "SELLMACD"
 		} else if btcResult.Status == RANGE {
 			apiStatus = "RANGE"
-		} else if btcResult.Status == UPEMA {
-			apiStatus = "UPEMA"
-		} else if btcResult.Status == DOWNEMA {
-			apiStatus = "DOWNEMA"
-		} else if btcResult.Status == UPEMAGT {
-			apiStatus = "UPEMAGT"
-		} else if btcResult.Status == DOWNEMALT {
-			apiStatus = "DOWNEMALT"
 		}
 
 		if r.URL.Query().Get("format") == "text" {
@@ -129,20 +121,12 @@ func (api *TrendAPI) handleTrendETH(w http.ResponseWriter, r *http.Request) {
 	if ethResult, ok := api.latestResults[ethKey]; ok {
 		// 根据请求格式返回不同的响应
 		apiStatus := "unknown"
-		if ethResult.Status == UP {
-			apiStatus = "UP"
-		} else if ethResult.Status == DOWN {
-			apiStatus = "DOWN"
+		if ethResult.Status == BUYMACD {
+			apiStatus = "BUYMACD"
+		} else if ethResult.Status == SELLMACD {
+			apiStatus = "SELLMACD"
 		} else if ethResult.Status == RANGE {
 			apiStatus = "RANGE"
-		} else if ethResult.Status == UPEMA {
-			apiStatus = "UPEMA"
-		} else if ethResult.Status == DOWNEMA {
-			apiStatus = "DOWNEMA"
-		} else if ethResult.Status == UPEMAGT {
-			apiStatus = "UPEMAGT"
-		} else if ethResult.Status == DOWNEMALT {
-			apiStatus = "DOWNEMALT"
 		}
 
 		if r.URL.Query().Get("format") == "text" {

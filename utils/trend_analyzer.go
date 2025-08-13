@@ -10,13 +10,9 @@ import (
 type TrendStatus string
 
 const (
-	UP        TrendStatus = "多"
-	DOWN      TrendStatus = "空"
-	RANGE     TrendStatus = "乱"
-	UPEMA     TrendStatus = "金叉"
-	DOWNEMA   TrendStatus = "死叉"
-	UPEMAGT   TrendStatus = "金叉之上"
-	DOWNEMALT TrendStatus = "死叉之下"
+	RANGE    TrendStatus = "RANGE"
+	BUYMACD  TrendStatus = "BUYMACD"
+	SELLMACD TrendStatus = "SELLMACD"
 )
 
 // TrendResult 趋势分析结果
@@ -66,31 +62,39 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	price := closePrices[len(closePrices)-1]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
+	UpMACD := IsAboutToGoldenCross(closePrices, 6, 13, 5)
+	DownMACD := IsAboutToDeadCross(closePrices, 6, 13, 5)
+	XUpMACD := IsGolden(closePrices, 6, 13, 5)
+	XDownMACD := IsDead(closePrices, 6, 13, 5)
+
+	var BuyMACD, SellMACD bool
+	UPEMA := ema25 > ema50
+	DOWNEMA := ema25 < ema50
+	if UPEMA && price > ema25 && UpMACD { //金叉浅回调
+		BuyMACD = true
+	} else if UPEMA && price < ema25 && XUpMACD { //金叉深回调
+		BuyMACD = true
+	} else if DOWNEMA && price > ema25 && XUpMACD { //死叉反转
+		BuyMACD = true
+	} else if DOWNEMA && price < ema25 && DownMACD {
+		SellMACD = true
+	} else if DOWNEMA && price > ema25 && XDownMACD {
+		SellMACD = true
+	} else if UPEMA && price < ema25 && XDownMACD {
+		SellMACD = true
+	} else {
+		BuyMACD = false
+		SellMACD = false
+	}
 
 	// 判断趋势
 	var status TrendStatus
-	if interval == "1h" || interval == "3d" {
-		if price > ema25 && ema25 > ema50 {
-			status = UP
-		} else if price < ema25 && ema25 < ema50 {
-			status = DOWN
-		} else {
-			status = RANGE
-		}
-	} else if interval == "15m" || interval == "1d" {
-		if price > ema25 && ema25 > ema50 {
-			status = UPEMAGT
-		} else if price < ema25 && ema25 < ema50 {
-			status = DOWNEMALT
-		} else {
-			status = RANGE
-		}
+	if BuyMACD {
+		status = BUYMACD
+	} else if SellMACD {
+		status = SELLMACD
 	} else {
-		if ema25 > ema50 {
-			status = UPEMA
-		} else {
-			status = DOWNEMA
-		}
+		status = RANGE
 	}
 
 	return &TrendResult{
