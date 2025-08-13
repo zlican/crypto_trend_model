@@ -47,11 +47,11 @@ func main() {
 		apiServer.UpdateResults(results)
 	}
 
-	// ✅ 计算下一次 minute % 15 == 0 的时间
+	// ✅ 计算下一次 minute % 5 == 0 的时间
 	now := time.Now()
-	minutesToNext := 15 - (now.Minute() % 15)
+	minutesToNext := 5 - (now.Minute() % 5)
 	if minutesToNext == 0 {
-		minutesToNext = 15
+		minutesToNext = 5
 	}
 	nextAligned := now.Truncate(time.Minute).Add(time.Duration(minutesToNext) * time.Minute)
 	delay := time.Until(nextAligned)
@@ -72,7 +72,7 @@ func main() {
 			apiServer.UpdateResults(results)
 		}
 
-		ticker := time.NewTicker(15 * time.Minute)
+		ticker := time.NewTicker(5 * time.Minute)
 		defer ticker.Stop()
 
 		for {
