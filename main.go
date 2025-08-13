@@ -98,6 +98,7 @@ func main() {
 // runAnalysis 运行一次趋势分析
 func runAnalysis(analyzer *utils.TrendAnalyzer, output *utils.OutputManager) []*utils.TrendResult {
 	log.Println("开始执行趋势分析...")
+	time.Sleep(7 * time.Second) //等待当前K线出来
 
 	// 分析所有趋势
 	results := analyzer.AnalyzeAllTrends()

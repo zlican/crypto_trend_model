@@ -13,6 +13,8 @@ const (
 	RANGE    TrendStatus = "RANGE"
 	BUYMACD  TrendStatus = "BUYMACD"
 	SELLMACD TrendStatus = "SELLMACD"
+	UP       TrendStatus = "UP"
+	DOWN     TrendStatus = "DOWN"
 )
 
 // TrendResult 趋势分析结果
@@ -89,12 +91,22 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 
 	// 判断趋势
 	var status TrendStatus
-	if BuyMACD {
-		status = BUYMACD
-	} else if SellMACD {
-		status = SELLMACD
+	if interval == "1h" || interval == "3d" {
+		if ema25 > ema50 && price > ema25 {
+			status = UP
+		} else if ema25 < ema50 && price < ema25 {
+			status = DOWN
+		} else {
+			status = RANGE
+		}
 	} else {
-		status = RANGE
+		if BuyMACD {
+			status = BUYMACD
+		} else if SellMACD {
+			status = SELLMACD
+		} else {
+			status = RANGE
+		}
 	}
 
 	return &TrendResult{

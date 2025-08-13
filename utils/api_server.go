@@ -72,6 +72,10 @@ func (api *TrendAPI) handleTrendBTC(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "SELLMACD"
 		} else if btcResult.Status == RANGE {
 			apiStatus = "RANGE"
+		} else if btcResult.Status == UP {
+			apiStatus = "UP"
+		} else if btcResult.Status == DOWN {
+			apiStatus = "DOWN"
 		}
 
 		if r.URL.Query().Get("format") == "text" {
@@ -127,6 +131,10 @@ func (api *TrendAPI) handleTrendETH(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "SELLMACD"
 		} else if ethResult.Status == RANGE {
 			apiStatus = "RANGE"
+		} else if ethResult.Status == UP {
+			apiStatus = "UP"
+		} else if ethResult.Status == DOWN {
+			apiStatus = "DOWN"
 		}
 
 		if r.URL.Query().Get("format") == "text" {
