@@ -61,9 +61,10 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	closePrices := ExtractClosePrices(klines)
 
 	// 计算指标
-	price := closePrices[len(closePrices)-1]
+	price := closePrices[len(closePrices)-2]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
+	ma60 := CalculateMA(closePrices, 60)
 	UpMACD := IsAboutToGoldenCross(closePrices, 6, 13, 5)
 	DownMACD := IsAboutToDeadCross(closePrices, 6, 13, 5)
 	XUpMACD := IsGolden(closePrices, 6, 13, 5)
@@ -72,17 +73,13 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	var BuyMACD, SellMACD bool
 	UPEMA := ema25 > ema50
 	DOWNEMA := ema25 < ema50
-	if UPEMA && price > ema25 && UpMACD { //金叉浅回调
+	if UPEMA && UpMACD { //金叉回调
 		BuyMACD = true
-	} else if UPEMA && price < ema25 && XUpMACD { //金叉深回调
+	} else if DOWNEMA && price > ma60 && XUpMACD { //死叉反转
 		BuyMACD = true
-	} else if DOWNEMA && price > ema25 && XUpMACD { //死叉反转
-		BuyMACD = true
-	} else if DOWNEMA && price < ema25 && DownMACD {
+	} else if DOWNEMA && DownMACD {
 		SellMACD = true
-	} else if DOWNEMA && price > ema25 && XDownMACD {
-		SellMACD = true
-	} else if UPEMA && price < ema25 && XDownMACD {
+	} else if UPEMA && price < ma60 && XDownMACD {
 		SellMACD = true
 	} else {
 		BuyMACD = false
