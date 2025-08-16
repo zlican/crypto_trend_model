@@ -141,3 +141,12 @@ func ExtractClosePrices(klines []KlineData) []float64 {
 	}
 	return prices
 }
+
+// ExtractClosePrices 从K线数据中提取收盘价
+func ExtractOpensPrices(klines []KlineData) []float64 {
+	prices := make([]float64, len(klines))
+	for i, kline := range klines {
+		prices[i] = kline.Open
+	}
+	return prices
+}

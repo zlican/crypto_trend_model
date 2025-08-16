@@ -59,9 +59,11 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 
 	// 提取收盘价
 	closePrices := ExtractClosePrices(klines)
+	opensPrices := ExtractOpensPrices(klines)
 
 	// 计算指标
 	price := closePrices[len(closePrices)-2]
+	open := opensPrices[len(opensPrices)-2]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 	ma60 := CalculateMA(closePrices, 60)
@@ -90,9 +92,9 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	var status TrendStatus
 	if interval == "15m" || interval == "1h" || interval == "1d" || interval == "3d" {
 
-		if ema25 > ema50 && price > ema25 {
+		if ema25 > ema50 && (price > ema25 && open > ema25) {
 			status = UP
-		} else if ema25 < ema50 && price < ema25 {
+		} else if ema25 < ema50 && (price < ema25 && open < ema25) {
 			status = DOWN
 		} else {
 			status = RANGE
