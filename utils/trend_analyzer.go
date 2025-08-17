@@ -72,15 +72,15 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 	DownMACD := IsAboutToDeadCross(closePrices, 6, 13, 5)
 
 	var BuyMACD, SellMACD bool
-	UPEMA := ema25 > ema50
-	DOWNEMA := ema25 < ema50
-	if UPEMA && UpMACD && price > ema25 && ma60 < ema25 { //金叉回调
+	UPEMA := ema25 > ma60
+	DOWNEMA := ema25 < ma60
+	if UPEMA && UpMACD { //金叉回调
 		BuyMACD = true
-	} else if DOWNEMA && XUpMACD && price > ema25 && ma60 < ema25 { //死叉反转
+	} else if DOWNEMA && XUpMACD && price > ema25 && price > ma60 { //死叉反转
 		BuyMACD = true
-	} else if DOWNEMA && DownMACD && price < ema25 && ma60 > ema25 {
+	} else if DOWNEMA && DownMACD {
 		SellMACD = true
-	} else if UPEMA && XDownMACD && price < ema25 && ma60 > ema25 {
+	} else if UPEMA && XDownMACD && price < ema25 && price < ma60 {
 		SellMACD = true
 	} else {
 		BuyMACD = false
