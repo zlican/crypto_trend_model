@@ -62,7 +62,7 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 	closePrices := ExtractClosePrices(klines)
 
 	// 计算指标
-	price := closePrices[len(closePrices)-1]
+	price := closePrices[len(closePrices)-2]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 	ma60 := CalculateMA(closePrices, 60)
@@ -74,11 +74,11 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 	var BuyMACD, SellMACD bool
 	UPEMA := ema25 > ma60
 	DOWNEMA := ema25 < ma60
-	if UPEMA && UpMACD { //金叉回调
+	if UPEMA && UpMACD && price > ma60 { //金叉回调
 		BuyMACD = true
 	} else if DOWNEMA && XUpMACD && price > ema25 && price > ma60 { //死叉反转
 		BuyMACD = true
-	} else if DOWNEMA && DownMACD {
+	} else if DOWNEMA && DownMACD && price < ma60 {
 		SellMACD = true
 	} else if UPEMA && XDownMACD && price < ema25 && price < ma60 {
 		SellMACD = true

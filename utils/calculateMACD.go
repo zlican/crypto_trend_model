@@ -26,8 +26,8 @@ func IsAboutToGoldenCross(closePrices []float64, fastPeriod, slowPeriod, signalP
 		return false
 	}
 
-	C := histogram[len(histogram)-2]
-	D := histogram[len(histogram)-1]
+	C := histogram[len(histogram)-3]
+	D := histogram[len(histogram)-2]
 
 	// 条件一：最新柱为正
 	if D > 0 {
@@ -51,7 +51,7 @@ func IsGolden(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) b
 		return false
 	}
 
-	D := histogram[len(histogram)-1]
+	D := histogram[len(histogram)-2]
 
 	// 条件一：最新柱为正
 	if D > 0 {
@@ -70,8 +70,8 @@ func IsAboutToDeadCross(closePrices []float64, fastPeriod, slowPeriod, signalPer
 		return false
 	}
 
-	C := histogram[len(histogram)-2]
-	D := histogram[len(histogram)-1]
+	C := histogram[len(histogram)-3]
+	D := histogram[len(histogram)-2]
 
 	// 条件一：最新柱为负（直接看空）
 	if D < 0 {
@@ -95,7 +95,7 @@ func IsDead(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) boo
 		return false
 	}
 
-	D := histogram[len(histogram)-1]
+	D := histogram[len(histogram)-2]
 
 	// 条件一：最新柱为负（直接看空）
 	if D < 0 {
