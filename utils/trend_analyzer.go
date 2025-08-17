@@ -59,11 +59,9 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 
 	// 提取收盘价
 	closePrices := ExtractClosePrices(klines)
-	opensPrices := ExtractOpensPrices(klines)
 
 	// 计算指标
-	price := closePrices[len(closePrices)-2]
-	open := opensPrices[len(opensPrices)-2]
+	price := closePrices[len(closePrices)-1]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 	ma60 := CalculateMA(closePrices, 60)
@@ -75,13 +73,13 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 	var BuyMACD, SellMACD bool
 	UPEMA := ema25 > ema50
 	DOWNEMA := ema25 < ema50
-	if UPEMA && UpMACD && ma60 < ema25 { //金叉回调
+	if UPEMA && UpMACD && price > ema25 && (price > ma60 || ma60 < ema25) { //金叉回调
 		BuyMACD = true
-	} else if DOWNEMA && price > ma60 && XUpMACD && ma60 < ema25 { //死叉反转
+	} else if DOWNEMA && XUpMACD && price > ema25 && (price > ma60 || ma60 < ema25) { //死叉反转
 		BuyMACD = true
-	} else if DOWNEMA && DownMACD && ma60 > ema25 {
+	} else if DOWNEMA && DownMACD && price < ema25 && (price < ma60 || ma60 > ema25) {
 		SellMACD = true
-	} else if UPEMA && price < ma60 && XDownMACD && ma60 > ema25 {
+	} else if UPEMA && XDownMACD && price < ema25 && (price < ma60 || ma60 > ema25) {
 		SellMACD = true
 	} else {
 		BuyMACD = false
@@ -90,23 +88,13 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 
 	// 判断趋势
 	var status TrendStatus
-	if interval == "15m" || interval == "1h" || interval == "1d" || interval == "3d" {
 
-		if ema25 > ema50 && (price > ema25 && open > ema25) {
-			status = UP
-		} else if ema25 < ema50 && (price < ema25 && open < ema25) {
-			status = DOWN
-		} else {
-			status = RANGE
-		}
+	if BuyMACD {
+		status = BUYMACD
+	} else if SellMACD {
+		status = SELLMACD
 	} else {
-		if BuyMACD {
-			status = BUYMACD
-		} else if SellMACD {
-			status = SELLMACD
-		} else {
-			status = RANGE
-		}
+		status = RANGE
 	}
 
 	return &TrendResult{
