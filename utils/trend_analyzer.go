@@ -2,6 +2,7 @@ package utils
 
 import (
 	"crypto_trend_monitor/config"
+	"database/sql"
 	"fmt"
 	"time"
 )
@@ -42,7 +43,7 @@ func NewTrendAnalyzer() *TrendAnalyzer {
 }
 
 // AnalyzeTrend 分析特定币种和时间周期的趋势
-func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, error) {
+func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*TrendResult, error) {
 	// 获取最大周期值，并多获取一些数据以确保足够
 	maxPeriod := GetMaxPeriod(a.indicators)
 	limit := 499
@@ -97,23 +98,28 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string) (*TrendResult, err
 		status = RANGE
 	}
 
-	return &TrendResult{
+	res := &TrendResult{
 		Symbol:   symbol,
 		Interval: interval,
 		Status:   status,
 		EMA25:    ema25,
 		EMA50:    ema50,
 		Time:     time.Now(),
-	}, nil
+	}
+
+	if err := SaveTrendResult(db, res); err != nil {
+		return nil, err
+	}
+	return res, nil
 }
 
 // AnalyzeAllTrends 分析所有配置的币种和时间周期的趋势
-func (a *TrendAnalyzer) AnalyzeAllTrends() []*TrendResult {
+func (a *TrendAnalyzer) AnalyzeAllTrends(db *sql.DB) []*TrendResult {
 	results := make([]*TrendResult, 0)
 
 	for _, symbol := range config.GlobalConfig.Symbols {
 		for _, interval := range config.GlobalConfig.Intervals {
-			result, err := a.AnalyzeTrend(symbol, interval)
+			result, err := a.AnalyzeTrend(symbol, interval, db)
 			if err != nil {
 				fmt.Printf("分析 %s %s 趋势失败: %v\n", symbol, interval, err)
 				continue

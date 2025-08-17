@@ -2,7 +2,9 @@ package main
 
 import (
 	"crypto_trend_monitor/config"
+	"crypto_trend_monitor/model"
 	"crypto_trend_monitor/utils"
+	"database/sql"
 	"log"
 	"os"
 	"os/signal"
@@ -14,6 +16,10 @@ import (
 const (
 	BinanceAPIBaseURL = "https://fapi.binance.com"
 	KlineEndpoint     = "/fapi/v1/klines"
+)
+
+var (
+	db *sql.DB
 )
 
 func main() {
@@ -39,6 +45,9 @@ func main() {
 			}
 		}()
 	}
+
+	model.InitDB()
+	db = model.DB
 
 	// ✅ 首次立即执行
 	log.Printf("[TrendMonitor] 首次立即执行: %s", time.Now().Format("15:04:05"))
@@ -101,7 +110,7 @@ func runAnalysis(analyzer *utils.TrendAnalyzer, output *utils.OutputManager) []*
 	time.Sleep(7 * time.Second) //等待当前K线出来
 
 	// 分析所有趋势
-	results := analyzer.AnalyzeAllTrends()
+	results := analyzer.AnalyzeAllTrends(db)
 
 	// 记录结果
 	if err := output.LogTrendResults(results); err != nil {
