@@ -70,8 +70,10 @@ func (api *TrendAPI) handleTrendBTC(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "BUYMACD"
 		} else if btcResult.Status == SELLMACD {
 			apiStatus = "SELLMACD"
-		} else if btcResult.Status == RANGE {
-			apiStatus = "RANGE"
+		} else if btcResult.Status == UPRANGE {
+			apiStatus = "UPRANGE"
+		} else if btcResult.Status == DOWNRANGE {
+			apiStatus = "DOWNRANGE"
 		} else if btcResult.Status == UP {
 			apiStatus = "UP"
 		} else if btcResult.Status == DOWN {
@@ -129,8 +131,10 @@ func (api *TrendAPI) handleTrendETH(w http.ResponseWriter, r *http.Request) {
 			apiStatus = "BUYMACD"
 		} else if ethResult.Status == SELLMACD {
 			apiStatus = "SELLMACD"
-		} else if ethResult.Status == RANGE {
-			apiStatus = "RANGE"
+		} else if ethResult.Status == UPRANGE {
+			apiStatus = "UPRANGE"
+		} else if ethResult.Status == DOWNRANGE {
+			apiStatus = "DOWNRANGE"
 		} else if ethResult.Status == UP {
 			apiStatus = "UP"
 		} else if ethResult.Status == DOWN {

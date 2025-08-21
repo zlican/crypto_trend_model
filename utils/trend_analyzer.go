@@ -11,11 +11,12 @@ import (
 type TrendStatus string
 
 const (
-	RANGE    TrendStatus = "RANGE"
-	BUYMACD  TrendStatus = "BUYMACD"
-	SELLMACD TrendStatus = "SELLMACD"
-	UP       TrendStatus = "UP"
-	DOWN     TrendStatus = "DOWN"
+	UPRANGE   TrendStatus = "UPRANGE"
+	DOWNRANGE TrendStatus = "DOWNRANGE"
+	BUYMACD   TrendStatus = "BUYMACD"
+	SELLMACD  TrendStatus = "SELLMACD"
+	UP        TrendStatus = "UP"
+	DOWN      TrendStatus = "DOWN"
 )
 
 // TrendResult 趋势分析结果
@@ -90,13 +91,14 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 
 	// 判断趋势
 	var status TrendStatus
-
 	if BuyMACD {
 		status = BUYMACD
 	} else if SellMACD {
 		status = SELLMACD
+	} else if price > ma60 {
+		status = UPRANGE
 	} else {
-		status = RANGE
+		status = DOWNRANGE
 	}
 
 	res := &TrendResult{
