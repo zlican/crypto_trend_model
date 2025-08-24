@@ -14,8 +14,6 @@ const (
 	RANGE    TrendStatus = "RANGE"
 	BUYMACD  TrendStatus = "BUYMACD"
 	SELLMACD TrendStatus = "SELLMACD"
-	UP       TrendStatus = "UP"
-	DOWN     TrendStatus = "DOWN"
 )
 
 // TrendResult 趋势分析结果
@@ -62,41 +60,55 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 	closePrices := ExtractClosePrices(klines)
 
 	// 计算指标
-	price := closePrices[len(closePrices)-2]
+	price := closePrices[len(closePrices)-1]
 	ema25 := a.indicators["EMA25"].Calculate(closePrices)
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 	ma60 := CalculateMA(closePrices, 60)
-	var XUpMACD, XDownMACD, UpMACD, DownMACD bool
-	XUpMACD = IsGolden(closePrices, 6, 13, 5)
-	XDownMACD = IsDead(closePrices, 6, 13, 5)
-	UpMACD = IsGoldenCross(closePrices, 6, 13, 5)
-	DownMACD = IsDeadCross(closePrices, 6, 13, 5)
 
-	var BuyMACD, SellMACD bool
-	UPEMA := ema25 > ma60
-	DOWNEMA := ema25 < ma60
-	if UPEMA && UpMACD && (price > ma60 || XUpMACD) { //金叉回调
-		BuyMACD = true
-	} else if DOWNEMA && XUpMACD && price > ema25 && price > ma60 { //死叉反转
-		BuyMACD = true
-	} else if DOWNEMA && DownMACD && (price < ma60 || XDownMACD) {
-		SellMACD = true
-	} else if UPEMA && XDownMACD && price < ema25 && price < ma60 {
-		SellMACD = true
-	} else {
-		BuyMACD = false
-		SellMACD = false
+	var BuyMACD, SellMACD, Range bool
+	if interval == "1h" || interval == "3d" { //大时看柱
+		goldenUP := IsGoldenUP(closePrices, 6, 13, 5)
+		deadDOWN := IsDeadDOWN(closePrices, 6, 13, 5)
+		if goldenUP && deadDOWN {
+			Range = true
+		} else if goldenUP {
+			BuyMACD = true
+		} else if deadDOWN {
+			SellMACD = true
+		} else {
+			Range = false
+			BuyMACD = false
+			SellMACD = false
+		}
+	} else if interval == "15m" || interval == "1d" { //中时看DEA和EMA25
+		DEAUP := IsDEAUP(closePrices, 6, 13, 5)
+		DEADOWN := IsDEADOWN(closePrices, 6, 13, 5)
+		if price > ema25 && DEAUP {
+			BuyMACD = true
+		} else if price < ema25 && DEADOWN {
+			SellMACD = true
+		} else {
+			Range = true
+		}
+	} else { //操作小时看EMA25和MA60
+		if price > ma60 && price > ema25 {
+			BuyMACD = true
+		} else if price < ma60 && price < ema25 {
+			SellMACD = true
+		} else {
+			Range = true
+		}
 	}
 
 	// 判断趋势
 	var status TrendStatus
 
-	if BuyMACD {
+	if Range {
+		status = RANGE
+	} else if BuyMACD {
 		status = BUYMACD
 	} else if SellMACD {
 		status = SELLMACD
-	} else {
-		status = RANGE
 	}
 
 	res := &TrendResult{
