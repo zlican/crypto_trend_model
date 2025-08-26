@@ -27,14 +27,17 @@ func IsGoldenUP(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int)
 		return false
 	}
 
-	C := histogram[len(histogram)-3]
 	D := histogram[len(histogram)-2]
 	E := histogram[len(histogram)-1]
 
 	if E > 0 {
 		return true
 	}
-	if C < 0 && D < 0 && C < D {
+	if D > 0 {
+		return true
+	}
+
+	if D < 0 && E < 0 && D < E {
 		return true
 	}
 
@@ -51,13 +54,20 @@ func IsGolden(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) b
 	if len(histogram) < 5 {
 		return false
 	}
-
+	D := histogram[len(histogram)-2]
 	E := histogram[len(histogram)-1]
 
-	return E > 0
+	if E > 0 {
+		return true
+	}
+	if D > 0 {
+		return true
+	}
+
+	return false
 }
 
-//为正
+//为负
 func IsDeadDOWN(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) bool {
 	if len(closePrices) < slowPeriod+signalPeriod+1 {
 		return false
@@ -68,14 +78,17 @@ func IsDeadDOWN(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int)
 		return false
 	}
 
-	C := histogram[len(histogram)-3]
 	D := histogram[len(histogram)-2]
 	E := histogram[len(histogram)-1]
 
 	if E < 0 {
 		return true
 	}
-	if C > 0 && D > 0 && C > D {
+	if D < 0 {
+		return true
+	}
+
+	if D > 0 && E > 0 && D > E {
 		return true
 	}
 
@@ -92,7 +105,16 @@ func IsDead(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) boo
 	if len(histogram) < 5 {
 		return false
 	}
-	return histogram[len(histogram)-1] < 0
+	D := histogram[len(histogram)-2]
+	E := histogram[len(histogram)-1]
+
+	if E < 0 {
+		return true
+	}
+	if D < 0 {
+		return true
+	}
+	return false
 }
 
 // 判断DEA趋势
@@ -117,4 +139,38 @@ func IsDEADOWN(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) 
 		return false
 	}
 	return DEA[len(DEA)-1] < 0
+}
+
+//为正
+func UPUP(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) bool {
+	if len(closePrices) < slowPeriod+signalPeriod+1 {
+		return false
+	}
+
+	_, _, histogram := CalculateMACD(closePrices, fastPeriod, slowPeriod, signalPeriod)
+	if len(histogram) < 2 {
+		return false
+	}
+
+	D := histogram[len(histogram)-2]
+	E := histogram[len(histogram)-1]
+
+	return E > D
+}
+
+//为负
+func DownDown(closePrices []float64, fastPeriod, slowPeriod, signalPeriod int) bool {
+	if len(closePrices) < slowPeriod+signalPeriod+1 {
+		return false
+	}
+
+	_, _, histogram := CalculateMACD(closePrices, fastPeriod, slowPeriod, signalPeriod)
+	if len(histogram) < 2 {
+		return false
+	}
+
+	D := histogram[len(histogram)-2]
+	E := histogram[len(histogram)-1]
+
+	return E < D
 }

@@ -68,12 +68,18 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 	var BuyMACD, SellMACD, Range bool
 	if interval == "1h" || interval == "3d" { //大时看柱
 		goldenUP := IsGoldenUP(closePrices, 6, 13, 5)
+		UPUP := UPUP(closePrices, 6, 13, 5)
 		deadDOWN := IsDeadDOWN(closePrices, 6, 13, 5)
-		if goldenUP && deadDOWN {
+		DOWNDOWN := DownDown(closePrices, 6, 13, 5)
+
+		MACDUP := (price < ma60 && UPUP) || (price > ma60 && goldenUP)
+		MACDDOWN := ((price > ma60 && DOWNDOWN) || (price < ma60 && deadDOWN))
+
+		if MACDUP && MACDDOWN {
 			Range = true
-		} else if goldenUP {
+		} else if MACDUP {
 			BuyMACD = true
-		} else if deadDOWN {
+		} else if MACDDOWN {
 			SellMACD = true
 		} else {
 			Range = false
