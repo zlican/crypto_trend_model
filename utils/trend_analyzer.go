@@ -84,20 +84,20 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 			BuyMACD = false
 			SellMACD = false
 		}
-	} else if interval == "15m" || interval == "1d" { //中时看DEA和EMA25
-		DEAUP := IsDEAUP(closePrices, 6, 13, 5)
-		DEADOWN := IsDEADOWN(closePrices, 6, 13, 5)
-		if price > ema25 && DEAUP {
+	} else if interval == "15m" || interval == "1d" { //中时看DIF和EMA25
+		DIFUP := IsDIFUP(closePrices, 6, 13, 5)
+		DIFDOWN := IsDIFDOWN(closePrices, 6, 13, 5)
+		if price > ema25 && price > ma60 && DIFUP {
 			BuyMACD = true
-		} else if price < ema25 && DEADOWN {
+		} else if price < ema25 && price < ma60 && DIFDOWN {
 			SellMACD = true
 		} else {
 			Range = true
 		}
 	} else { //操作小时看EMA25和MA60
-		if price > ma60 && price > ema25 {
+		if price > ema25 && price > ma60 {
 			BuyMACD = true
-		} else if price < ma60 && price < ema25 {
+		} else if price < ema25 && price < ma60 {
 			SellMACD = true
 		} else {
 			Range = true
