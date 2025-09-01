@@ -70,19 +70,15 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 		UPUP := UPUP(closePrices, 6, 13, 5)
 		DOWNDOWN := DownDown(closePrices, 6, 13, 5)
 
-		MACDUP := UPUP
-		MACDDOWN := DOWNDOWN
+		MACDUP := UPUP && price > ema25
+		MACDDOWN := DOWNDOWN && price < ema25
 
-		if MACDUP && MACDDOWN {
-			Range = true
-		} else if MACDUP {
+		if MACDUP {
 			BuyMACD = true
 		} else if MACDDOWN {
 			SellMACD = true
 		} else {
-			Range = false
-			BuyMACD = false
-			SellMACD = false
+			Range = true
 		}
 	} else if interval == "15m" || interval == "1d" { //中时看DIF和EMA25
 		DIFUP := IsDIFUP(closePrices, 6, 13, 5)
