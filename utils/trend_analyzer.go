@@ -91,9 +91,11 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 			Range = true
 		}
 	} else { //操作小时看EMA25和MA60
-		if price > ema25 && price > ma60 {
+		UPUP := UPUP(closePrices, 6, 13, 5)
+		DOWNDOWN := DownDown(closePrices, 6, 13, 5)
+		if price > ema25 && price > ma60 && UPUP {
 			BuyMACD = true
-		} else if price < ema25 && price < ma60 {
+		} else if price < ema25 && price < ma60 && DOWNDOWN {
 			SellMACD = true
 		} else {
 			Range = true
