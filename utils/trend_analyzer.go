@@ -66,31 +66,19 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 	ma60 := CalculateMA(closePrices, 60)
 
 	var BuyMACD, SellMACD, Range bool
-	if interval == "1h" || interval == "3d" { //大时看柱
-		UPUP := UPUP(closePrices, 6, 13, 5)
-		DOWNDOWN := DownDown(closePrices, 6, 13, 5)
-
-		MACDUP := UPUP && price > ema25
-		MACDDOWN := DOWNDOWN && price < ema25
-
-		if MACDUP {
-			BuyMACD = true
-		} else if MACDDOWN {
-			SellMACD = true
-		} else {
-			Range = true
-		}
-	} else if interval == "15m" || interval == "1d" { //中时看DIF和EMA25
+	if interval == "15m" || interval == "1d" {
 		DIFUP := IsDIFUP(closePrices, 6, 13, 5)
 		DIFDOWN := IsDIFDOWN(closePrices, 6, 13, 5)
-		if price > ema25 && price > ma60 && DIFUP {
+		goldenMID := IsGolden(closePrices, 6, 13, 5)
+		deadMID := IsDead(closePrices, 6, 13, 5)
+		if price > ema25 && price > ma60 && DIFUP && goldenMID {
 			BuyMACD = true
-		} else if price < ema25 && price < ma60 && DIFDOWN {
+		} else if price < ema25 && price < ma60 && DIFDOWN && deadMID {
 			SellMACD = true
 		} else {
 			Range = true
 		}
-	} else { //操作小时看EMA25和MA60
+	} else {
 		UPUP := UPUP(closePrices, 6, 13, 5)
 		DOWNDOWN := DownDown(closePrices, 6, 13, 5)
 		if price > ema25 && price > ma60 && UPUP {
