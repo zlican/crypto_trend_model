@@ -65,25 +65,44 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 	ema50 := a.indicators["EMA50"].Calculate(closePrices)
 	ma60 := CalculateMA(closePrices, 60)
 
-	var BuyMACD, SellMACD, Range bool
-	if interval == "15m" || interval == "1d" {
-		DIFUP := IsDIFUP(closePrices, 6, 13, 5)
-		DIFDOWN := IsDIFDOWN(closePrices, 6, 13, 5)
-		goldenMID := IsGolden(closePrices, 6, 13, 5)
-		deadMID := IsDead(closePrices, 6, 13, 5)
-		if price > ema25 && price > ma60 && DIFUP && goldenMID {
+	var BuyMACD, SellMACD, Range, XBUYMID, XSELLMID bool
+	if interval == "1h" || interval == "3d" {
+		DEAUP := IsDEAUP(closePrices, 6, 13, 5)
+		DEADOWN := IsDEADOWN(closePrices, 6, 13, 5)
+		if price > ema25 && price > ma60 && DEAUP {
 			BuyMACD = true
-		} else if price < ema25 && price < ma60 && DIFDOWN && deadMID {
+		} else if price < ema25 && price < ma60 && DEADOWN {
 			SellMACD = true
 		} else {
 			Range = true
 		}
-	} else {
-		UPUP := UPUP(closePrices, 6, 13, 5)
-		DOWNDOWN := DownDown(closePrices, 6, 13, 5)
-		if price > ema25 && price > ma60 && UPUP {
+	} else if interval == "15m" || interval == "1d" {
+		DEAUP := IsDEAUP(closePrices, 6, 13, 5)
+		DEADOWN := IsDEADOWN(closePrices, 6, 13, 5)
+		if price > ema25 && price > ma60 && DEAUP {
 			BuyMACD = true
-		} else if price < ema25 && price < ma60 && DOWNDOWN {
+		} else if price < ema25 && price < ma60 && DEADOWN {
+			SellMACD = true
+		} else {
+			Range = true
+		}
+
+		if XSTRONGUP(closePrices, 6, 13, 5) && price > ma60 {
+			XBUYMID = true
+			BuyMACD = false
+			SellMACD = false
+			Range = false
+		}
+		if XSTRONGDOWN(closePrices, 6, 13, 5) && price < ma60 {
+			XSELLMID = true
+			BuyMACD = false
+			SellMACD = false
+			Range = false
+		}
+	} else {
+		if XSTRONGUP(closePrices, 6, 13, 5) && price > ma60 {
+			BuyMACD = true
+		} else if XSTRONGDOWN(closePrices, 6, 13, 5) && price < ma60 {
 			SellMACD = true
 		} else {
 			Range = true
@@ -99,6 +118,10 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 		status = BUYMACD
 	} else if SellMACD {
 		status = SELLMACD
+	} else if XBUYMID {
+		status = "XBUYMID"
+	} else if XSELLMID {
+		status = "XSELLMID"
 	}
 
 	res := &TrendResult{
