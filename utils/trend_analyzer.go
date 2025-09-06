@@ -67,21 +67,21 @@ func (a *TrendAnalyzer) AnalyzeTrend(symbol, interval string, db *sql.DB) (*Tren
 
 	var BuyMACD, SellMACD, Range, XBUYMID, XSELLMID bool
 	if interval == "1h" || interval == "3d" {
-		DEAUP := IsDEAUP(closePrices, 6, 13, 5)
-		DEADOWN := IsDEADOWN(closePrices, 6, 13, 5)
-		if price > ema25 && price > ma60 && DEAUP {
+		DIFUP := IsDIFUP(closePrices, 6, 13, 5)
+		DIFDOWN := IsDIFDOWN(closePrices, 6, 13, 5)
+		if price > ema25 && price > ma60 && DIFUP {
 			BuyMACD = true
-		} else if price < ema25 && price < ma60 && DEADOWN {
+		} else if price < ema25 && price < ma60 && DIFDOWN {
 			SellMACD = true
 		} else {
 			Range = true
 		}
 	} else if interval == "15m" || interval == "1d" {
-		DEAUP := IsDEAUP(closePrices, 6, 13, 5)
-		DEADOWN := IsDEADOWN(closePrices, 6, 13, 5)
-		if price > ema25 && price > ma60 && DEAUP {
+		DIFUP := IsDIFUP(closePrices, 6, 13, 5)
+		DIFDOWN := IsDIFDOWN(closePrices, 6, 13, 5)
+		if price > ema25 && price > ma60 && DIFUP {
 			BuyMACD = true
-		} else if price < ema25 && price < ma60 && DEADOWN {
+		} else if price < ema25 && price < ma60 && DIFDOWN {
 			SellMACD = true
 		} else {
 			Range = true
